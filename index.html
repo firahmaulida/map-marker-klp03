@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web GIS Sekolah di Banda Aceh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Web GIS Sekolah di Banda Aceh</h1>
+      <div>
+        <button id="aboutBtn">Tentang</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Cari sekolah..." />
+      </div>
+      <div class="filter-container">
+        <label for="layerFilter">Filter:</label>
+        <select id="layerFilter">
+          <option value="all">Semua Sekolah</option>
+          <!-- Filter options will be populated dynamically -->
+        </select>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="infoPanel" class="info-panel">
+      <h3>Informasi Sekolah</h3>
+      <div id="infoContent"></div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Web GIS Sekolah Banda Aceh | Data dari OpenStreetMap
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+
+    <script>
+      // Inisialisasi map dengan koordinat Banda Aceh
+      var map = L.map("map").setView([5.5548, 95.3171], 13);
+
+      // Tambahkan basemap layers
+      var osm = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+          attribution: "© OpenStreetMap contributors",
+        }
+      );
+      var satellite = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        {
+          attribution: "Imagery © Esri",
+          maxZoom: 19,
+        }
+      );
+      var baseMaps = {
+        OpenStreetMap: osm,
+        "Citra Satelit": satellite,
+      };
+
+      // Set default basemap
+      osm.addTo(map);
+
+      // Inisialisasi layer groups
+      var geojsonLayer;
+      var markerClusterGroup = L.markerClusterGroup();
+
+      var overlayMaps = {
+        "Data Sekolah": markerClusterGroup,
+      };
+
+      // Add layer control
+      L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+      // Add scale control
+      L.control.scale({ imperial: false }).addTo(map);
+
+      // School icon colors based on school type
+      function getSchoolColor(schoolType) {
+        schoolType = (schoolType || "").toLowerCase();
+        if (schoolType.includes("sd") || schoolType.includes("sekolah dasar")) {
+          return "#4CAF50"; // Green for elementary
+        } else if (
+          schoolType.includes("smp") ||
+          schoolType.includes("sekolah menengah pertama")
+        ) {
+          return "#2196F3"; // Blue for junior high
+        } else if (
+          schoolType.includes("sma") ||
+          schoolType.includes("sekolah menengah atas")
+        ) {
+          return "#FFC107"; // Yellow for senior high
+        } else if (
+          schoolType.includes("smk") ||
+          schoolType.includes("sekolah menengah kejuruan")
+        ) {
+          return "#FF5722"; // Orange for vocational
+        } else if (
+          schoolType.includes("tk") ||
+          schoolType.includes("taman kanak")
+        ) {
+          return "#9C27B0"; // Purple for kindergarten
+        } else if (
+          schoolType.includes("universitas") ||
+          schoolType.includes("univ") ||
+          schoolType.includes("perguruan tinggi")
+        ) {
+          return "#F44336"; // Red for university
+        } else {
+          return "#607D8B"; // Gray for others
+        }
+      }
+
+      // Function to create custom school icon
+      function createSchoolIcon(schoolType) {
+        const color = getSchoolColor(schoolType);
+        return L.divIcon({
+          className: "school-icon",
+          html:
+            '<div style="background-color:' +
+            color +
+            '; width: 24px; height: 24px; border-radius: 12px; border: 2px solid white;">S</div>',
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        });
+      }
+
+      // Function to clean property names for better display
+      function cleanPropertyName(name) {
+        name = name
+          .replace(/_/g, " ")
+          .replace(/:/g, " ")
+          .replace(/^[a-z]/, function (m) {
+            return m.toUpperCase();
+          });
+
+        // Special cases for OSM tags
+        if (name === "Name") return "Nama";
+        if (name === "Amenity") return "Jenis";
+        if (name === "Operator") return "Pengelola";
+        if (name === "Operator Type") return "Jenis Pengelola";
+        if (name === "Addr Street") return "Alamat";
+        if (name === "Phone") return "Telepon";
+        if (name === "Website") return "Situs Web";
+
+        return name;
+      }
+
+      // Function to create custom popup content
+      function createPopupContent(properties) {
+        let content = '<div class="popup-content">';
+
+        // Try to get the school name
+        const name = properties.name || properties.nama || "Sekolah";
+        content += "<h3>" + name + "</h3>";
+
+        content += "<table>";
+
+        // Process important properties first
+        const priorityProps = [
+          "amenity",
+          "isced",
+          "operator",
+          "operator_type",
+          "addr:street",
+          "addr:city",
+          "phone",
+          "website",
+        ];
+
+        // First show priority properties if they exist
+        priorityProps.forEach((prop) => {
+          if (properties[prop]) {
+            let value = properties[prop];
+
+            // Format links for website
+            if (prop === "website" && !value.startsWith("http")) {
+              value =
+                '<a href="http://' +
+                value +
+                '" target="_blank">' +
+                value +
+                "</a>";
+            } else if (prop === "website") {
+              value =
+                '<a href="' + value + '" target="_blank">' + value + "</a>";
+            }
+
+            content += `<tr><td><strong>${cleanPropertyName(
+              prop
+            )}:</strong></td><td>${value}</td></tr>`;
+          }
+        });
+
+        // Then show other properties
+        for (let key in properties) {
+          if (
+            properties.hasOwnProperty(key) &&
+            !priorityProps.includes(key) &&
+            key !== "name" &&
+            key !== "@id" &&
+            key !== "id" &&
+            !key.startsWith("_") &&
+            key !== "schoolType" &&
+            key !== "coordinatesType"
+          ) {
+            content += `<tr><td><strong>${cleanPropertyName(
+              key
+            )}:</strong></td><td>${properties[key]}</td></tr>`;
+          }
+        }
+
+        content += "</table>";
+        content += "</div>";
+
+        return content;
+      }
+
+      // Process Overpass Turbo GeoJSON format
+      function processOverpassData(data) {
+        let featureCollection = {
+          type: "FeatureCollection",
+          features: [],
+        };
+
+        if (data.elements) {
+          data.elements.forEach((element) => {
+            if (
+              (element.type === "node" || element.type === "way") &&
+              element.tags &&
+              element.tags.amenity &&
+              (element.tags.amenity === "school" ||
+                element.tags.amenity === "university" ||
+                element.tags.amenity === "kindergarten" ||
+                element.tags.amenity === "college")
+            ) {
+              let feature = {
+                type: "Feature",
+                properties: element.tags || {},
+                geometry: {
+                  type: "Point",
+                  coordinates: [],
+                },
+              };
+
+              feature.properties["@id"] = element.type + "/" + element.id;
+
+              if (element.type === "node" && element.lat && element.lon) {
+                feature.geometry.coordinates = [element.lon, element.lat];
+                featureCollection.features.push(feature);
+              } else if (
+                element.type === "way" &&
+                element.center &&
+                element.center.lat &&
+                element.center.lon
+              ) {
+                feature.geometry.coordinates = [
+                  element.center.lon,
+                  element.center.lat,
+                ];
+                featureCollection.features.push(feature);
+              }
+            }
+          });
+        }
+
+        return featureCollection;
+      }
+
+      // Fungsi untuk mengekstrak titik centroid dari poligon
+      function getCentroid(coordinates) {
+        if (!coordinates || coordinates.length === 0) {
+          return null;
+        }
+
+        let points;
+
+        if (Array.isArray(coordinates[0]) && Array.isArray(coordinates[0][0])) {
+          points = coordinates[0];
+        } else if (
+          Array.isArray(coordinates[0]) &&
+          coordinates[0].length === 2 &&
+          typeof coordinates[0][0] === "number"
+        ) {
+          points = coordinates;
+        } else if (
+          coordinates.length === 2 &&
+          typeof coordinates[0] === "number"
+        ) {
+          return coordinates;
+        } else {
+          console.error("Format koordinat tidak dikenali:", coordinates);
+          return null;
+        }
+
+        let sumX = 0;
+        let sumY = 0;
+
+        for (let i = 0; i < points.length; i++) {
+          sumX += points[i][0];
+          sumY += points[i][1];
+        }
+
+        return [sumX / points.length, sumY / points.length];
+      }
+
+      // Function to determine school type from OSM tags
+      function getSchoolType(properties) {
+        if (!properties) return "Lainnya";
+
+        if (properties.amenity === "university") return "Universitas";
+        if (properties.amenity === "college") return "Perguruan Tinggi";
+        if (properties.amenity === "kindergarten") return "TK";
+
+        if (properties.isced) {
+          const isced = properties.isced;
+          if (isced === "0") return "TK";
+          if (isced === "1") return "SD";
+          if (isced === "2") return "SMP";
+          if (isced === "3") return "SMA/SMK";
+        }
+
+        const name = (properties.name || "").toLowerCase();
+        if (name.includes("universitas") || name.includes("univ"))
+          return "Universitas";
+        if (name.includes("sma")) return "SMA";
+        if (name.includes("smk")) return "SMK";
+        if (name.includes("smp")) return "SMP";
+        if (
+          name.includes("sd ") ||
+          name.startsWith("sd ") ||
+          name.includes("sekolah dasar")
+        )
+          return "SD";
+        if (
+          name.includes("tk ") ||
+          name.startsWith("tk ") ||
+          name.includes("taman kanak")
+        )
+          return "TK";
+
+        return "Sekolah";
+      }
+
+      // Load GeoJSON or Overpass data
+      function loadSchoolData() {
+        fetch("data/data.geojson")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            let geoJsonData;
+            if (data.elements) {
+              geoJsonData = processOverpassData(data);
+            } else {
+              geoJsonData = data;
+            }
+            processGeoJsonData(geoJsonData);
+          })
+          .catch((error) => {
+            console.error("Error loading GeoJSON:", error);
+            alert(
+              "Terjadi kesalahan saat memuat data. Pastikan file data.geojson tersedia."
+            );
+          });
+      }
+
+      // Process GeoJSON data
+      function processGeoJsonData(data) {
+        let processedFeatures = [];
+        data.features.forEach((feature) => {
+          let newFeature = JSON.parse(JSON.stringify(feature));
+          if (
+            feature.geometry.type === "Polygon" ||
+            feature.geometry.type === "MultiPolygon"
+          ) {
+            let centroid;
+
+            if (feature.geometry.type === "Polygon") {
+              centroid = getCentroid(feature.geometry.coordinates);
+            } else if (feature.geometry.type === "MultiPolygon") {
+              centroid = getCentroid(feature.geometry.coordinates[0]);
+            }
+            if (centroid) {
+              newFeature.geometry = {
+                type: "Point",
+                coordinates: centroid,
+              };
+              newFeature.properties.coordinatesType =
+                "converted_from_" + feature.geometry.type;
+            } else {
+              console.warn("Tidak dapat menghitung centroid untuk:", feature);
+              return;
+            }
+          }
+          const schoolType = getSchoolType(newFeature.properties);
+          newFeature.properties.schoolType = schoolType;
+          processedFeatures.push(newFeature);
+        });
+
+        let processedData = {
+          type: "FeatureCollection",
+          features: processedFeatures,
+        };
+
+        geojsonLayer = L.geoJSON(processedData, {
+          onEachFeature: function (feature, layer) {
+            if (feature.properties) {
+              layer.bindPopup(createPopupContent(feature.properties));
+              layer.on("click", function () {
+                document.getElementById("infoPanel").style.display = "block";
+                let infoContent = createPopupContent(feature.properties);
+                document.getElementById("infoContent").innerHTML = infoContent;
+              });
+            }
+          },
+          pointToLayer: function (feature, latlng) {
+            const schoolType =
+              feature.properties.schoolType ||
+              getSchoolType(feature.properties);
+            return L.marker(latlng, {
+              icon: createSchoolIcon(schoolType),
+            });
+          },
+        });
+
+        markerClusterGroup.addLayer(geojsonLayer);
+        markerClusterGroup.addTo(map);
+
+        if (geojsonLayer.getBounds().isValid()) {
+          map.fitBounds(geojsonLayer.getBounds());
+        }
+
+        populateFilterOptions(processedData);
+      }
+
+      // Function to populate filter options based on school types
+      function populateFilterOptions(data) {
+        const filterSelect = document.getElementById("layerFilter");
+        const schoolTypes = new Set();
+
+        while (filterSelect.options.length > 1) {
+          filterSelect.options.remove(1);
+        }
+
+        if (data.features && data.features.length > 0) {
+          data.features.forEach((feature) => {
+            if (feature.properties) {
+              const schoolType =
+                feature.properties.schoolType ||
+                getSchoolType(feature.properties);
+              if (schoolType) {
+                schoolTypes.add(schoolType);
+              }
+            }
+          });
+
+          Array.from(schoolTypes)
+            .sort()
+            .forEach((type) => {
+              const option = document.createElement("option");
+              option.value = type;
+              option.textContent = type;
+              filterSelect.appendChild(option);
+            });
+        }
+      }
+
+      // Filter function
+      document
+        .getElementById("layerFilter")
+        .addEventListener("change", function (e) {
+          const filterValue = e.target.value;
+
+          if (filterValue === "all") {
+            markerClusterGroup.clearLayers();
+            markerClusterGroup.addLayer(geojsonLayer);
+          } else {
+            markerClusterGroup.clearLayers();
+
+            const filteredLayer = L.geoJSON(geojsonLayer.toGeoJSON(), {
+              filter: function (feature) {
+                if (!feature.properties) return false;
+                const schoolType =
+                  feature.properties.schoolType ||
+                  getSchoolType(feature.properties);
+                return schoolType === filterValue;
+              },
+              onEachFeature: function (feature, layer) {
+                if (feature.properties) {
+                  layer.bindPopup(createPopupContent(feature.properties));
+                  layer.on("click", function () {
+                    document.getElementById("infoPanel").style.display =
+                      "block";
+                    let infoContent = createPopupContent(feature.properties);
+                    document.getElementById("infoContent").innerHTML =
+                      infoContent;
+                  });
+                }
+              },
+              pointToLayer: function (feature, latlng) {
+                const schoolType =
+                  feature.properties.schoolType ||
+                  getSchoolType(feature.properties);
+                return L.marker(latlng, {
+                  icon: createSchoolIcon(schoolType),
+                });
+              },
+            });
+
+            markerClusterGroup.addLayer(filteredLayer);
+          }
+        });
+
+      // Search functionality
+      document.getElementById("search").addEventListener("keyup", function (e) {
+        if (e.key === "Enter") {
+          const searchText = e.target.value.toLowerCase();
+
+          if (searchText.length < 2) {
+            alert("Masukkan minimal 2 karakter untuk pencarian");
+            return;
+          }
+
+          markerClusterGroup.clearLayers();
+
+          const searchLayer = L.geoJSON(geojsonLayer.toGeoJSON(), {
+            filter: function (feature) {
+              if (!feature.properties) return false;
+              for (const prop in feature.properties) {
+                if (prop !== "coordinatesType" && prop !== "schoolType") {
+                  const value = String(feature.properties[prop]).toLowerCase();
+                  if (value.includes(searchText)) {
+                    return true;
+                  }
+                }
+              }
+              return false;
+            },
+            onEachFeature: function (feature, layer) {
+              if (feature.properties) {
+                layer.bindPopup(createPopupContent(feature.properties));
+                layer.on("click", function () {
+                  document.getElementById("infoPanel").style.display = "block";
+                  let infoContent = createPopupContent(feature.properties);
+                  document.getElementById("infoContent").innerHTML = infoContent;
+                });
+              }
+            },
+            pointToLayer: function (feature, latlng) {
+              const schoolType =
+                feature.properties.schoolType ||
+                getSchoolType(feature.properties);
+              return L.marker(latlng, {
+                icon: createSchoolIcon(schoolType),
+              });
+            },
+          });
+
+          markerClusterGroup.addLayer(searchLayer);
+
+          if (searchLayer.getLayers().length === 0) {
+            alert("Tidak ada hasil yang ditemukan");
+            markerClusterGroup.addLayer(geojsonLayer);
+          } else {
+            alert("Ditemukan " + searchLayer.getLayers().length + " sekolah");
+          }
+        }
+      });
+
+      // Add legend
+      var legend = L.control({ position: "bottomleft" });
+
+      legend.onAdd = function (map) {
+        var div = L.DomUtil.create("div", "legend");
+        div.innerHTML += "<h4>Legenda</h4>";
+
+        const schoolTypes = {
+          TK: "#9C27B0",
+          SD: "#4CAF50",
+          SMP: "#2196F3",
+          SMA: "#FFC107",
+          SMK: "#FF5722",
+          Universitas: "#F44336",
+          Sekolah: "#607D8B",
+        };
+
+        for (const type in schoolTypes) {
+          div.innerHTML +=
+            '<div class="legend-item">' +
+            '<div class="color-box" style="background:' +
+            schoolTypes[type] +
+            '"></div> ' +
+            type +
+            "</div>";
+        }
+
+        return div;
+      };
+
+      legend.addTo(map);
+
+      // Close info panel when clicking elsewhere on the map
+      map.on("click", function (e) {
+        if (!e.originalEvent.defaultPrevented) {
+          document.getElementById("infoPanel").style.display = "none";
+        }
+      });
+
+      // About button functionality
+      document
+        .getElementById("aboutBtn")
+        .addEventListener("click", function () {
+          alert(
+            "Web GIS Sekolah di Banda Aceh\nVersi 1.0\n\nAplikasi ini menampilkan data sekolah dari OpenStreetMap di Banda Aceh dengan fitur pencarian, filter berdasarkan jenis sekolah, dan informasi detail."
+          );
+        });
+
+      // Load data when page is ready
+      loadSchoolData();
+    </script>
+  </body>
+</html>
