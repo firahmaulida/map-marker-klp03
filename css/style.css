@@ -110,3 +110,9 @@ select {
   border-bottom: 1px solid #eee;
 }
 
+.school-icon {
+  text-align: center;
+  line-height: 24px;
+  font-weight: regular;
+  color: white;
+}
