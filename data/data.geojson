@@ -1,0 +1,3780 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-04-23T04:38:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/7272404",
+        "addr:city": "Banda Aceh",
+        "addr:postcode": "23111",
+        "addr:street": "Jalan T.Nyak Arief",
+        "amenity": "school",
+        "name": "SD/SMP/SMA Fatih Billingual School (putri)",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3617882, 5.5726691],
+            [95.3617422, 5.5724577],
+            [95.361544, 5.572345],
+            [95.362266, 5.5714292],
+            [95.3636534, 5.5712319],
+            [95.3637197, 5.5725025],
+            [95.3632711, 5.5726198],
+            [95.3629172, 5.5726972],
+            [95.3628677, 5.5724824],
+            [95.3628211, 5.5724894],
+            [95.3622625, 5.5725845],
+            [95.3617882, 5.5726691]
+          ],
+          [
+            [95.3635173, 5.5716528],
+            [95.3636061, 5.5716397],
+            [95.363588, 5.5715182],
+            [95.3634992, 5.5715313],
+            [95.3635173, 5.5716528]
+          ],
+          [
+            [95.3632246, 5.5718039],
+            [95.3632921, 5.5717957],
+            [95.3632941, 5.5718121],
+            [95.3633602, 5.5718041],
+            [95.3633622, 5.57182],
+            [95.3634802, 5.5718057],
+            [95.3634777, 5.5717848],
+            [95.3635413, 5.5717771],
+            [95.3635389, 5.5717572],
+            [95.3635795, 5.5717522],
+            [95.3635693, 5.571669],
+            [95.363512, 5.5716759],
+            [95.3635078, 5.5716411],
+            [95.3634805, 5.5716444],
+            [95.363478, 5.571624],
+            [95.3633163, 5.5716436],
+            [95.3633195, 5.5716696],
+            [95.3632097, 5.5716829],
+            [95.3632246, 5.5718039]
+          ],
+          [
+            [95.3633037, 5.5722647],
+            [95.3636424, 5.5722147],
+            [95.3636187, 5.5720558],
+            [95.36328, 5.5721059],
+            [95.3633037, 5.5722647]
+          ],
+          [
+            [95.3633024, 5.5720659],
+            [95.3635544, 5.5720357],
+            [95.3635302, 5.5718361],
+            [95.3632783, 5.5718663],
+            [95.3633024, 5.5720659]
+          ],
+          [
+            [95.3627566, 5.5718835],
+            [95.3626522, 5.5719055],
+            [95.3626673, 5.5719764],
+            [95.3626475, 5.5719805],
+            [95.3626999, 5.5722258],
+            [95.3626835, 5.5722293],
+            [95.362695, 5.5722832],
+            [95.3628356, 5.5722535],
+            [95.3627566, 5.5718835]
+          ],
+          [
+            [95.3622503, 5.5716144],
+            [95.3623509, 5.571601],
+            [95.3623427, 5.5715398],
+            [95.3622421, 5.5715531],
+            [95.3622503, 5.5716144]
+          ],
+          [
+            [95.3621859, 5.5717673],
+            [95.3622662, 5.5717599],
+            [95.3622568, 5.5716585],
+            [95.3621765, 5.5716658],
+            [95.3621859, 5.5717673]
+          ],
+          [
+            [95.3622832, 5.5718145],
+            [95.3622445, 5.57182],
+            [95.3622599, 5.5719273],
+            [95.3623291, 5.5719174],
+            [95.3623268, 5.5719018],
+            [95.3626187, 5.5718603],
+            [95.3626207, 5.5718743],
+            [95.3627025, 5.5718627],
+            [95.3626871, 5.5717559],
+            [95.3623605, 5.5718024],
+            [95.3623383, 5.571648],
+            [95.3622609, 5.571659],
+            [95.3622832, 5.5718145]
+          ],
+          [
+            [95.3622507, 5.5723555],
+            [95.3623817, 5.5723378],
+            [95.3623332, 5.5719814],
+            [95.3622022, 5.5719991],
+            [95.3622507, 5.5723555]
+          ]
+        ]
+      },
+      "id": "relation/7272404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/7273030",
+        "amenity": "school",
+        "name": "SMA Negeri 5 Banda Aceh",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3678029, 5.5750473],
+            [95.3678405, 5.5757201],
+            [95.3677488, 5.5761538],
+            [95.3666216, 5.5761852],
+            [95.3666275, 5.5761572],
+            [95.3666228, 5.5750847],
+            [95.3678029, 5.5750473]
+          ],
+          [
+            [95.3676659, 5.5752554],
+            [95.3677725, 5.5752521],
+            [95.3677676, 5.5750974],
+            [95.367661, 5.5751007],
+            [95.3676659, 5.5752554]
+          ],
+          [
+            [95.3676653, 5.5757293],
+            [95.3677853, 5.5757253],
+            [95.3677794, 5.5755492],
+            [95.3676594, 5.5755532],
+            [95.3676653, 5.5757293]
+          ],
+          [
+            [95.367717, 5.5754772],
+            [95.3677185, 5.5755136],
+            [95.3677774, 5.5755112],
+            [95.3677659, 5.5752772],
+            [95.3676104, 5.5752845],
+            [95.3676198, 5.5754818],
+            [95.367717, 5.5754772]
+          ],
+          [
+            [95.3672363, 5.5753644],
+            [95.3675948, 5.5753577],
+            [95.3675929, 5.5752562],
+            [95.3672344, 5.5752629],
+            [95.3672363, 5.5753644]
+          ],
+          [
+            [95.366914, 5.5753536],
+            [95.3669668, 5.5753532],
+            [95.3669666, 5.5754229],
+            [95.3670631, 5.5754231],
+            [95.3670633, 5.575367],
+            [95.3672314, 5.5753651],
+            [95.3672303, 5.575264],
+            [95.3670636, 5.5752658],
+            [95.3670638, 5.5752149],
+            [95.3669766, 5.5752146],
+            [95.3669764, 5.5752664],
+            [95.3669134, 5.5752669],
+            [95.366914, 5.5753536]
+          ],
+          [
+            [95.3668997, 5.575423],
+            [95.3669614, 5.5754219],
+            [95.3669603, 5.5753599],
+            [95.3668987, 5.5753609],
+            [95.3668997, 5.575423]
+          ],
+          [
+            [95.3667836, 5.5754548],
+            [95.3668959, 5.575452],
+            [95.3668919, 5.5752872],
+            [95.3667796, 5.5752899],
+            [95.3667836, 5.5754548]
+          ],
+          [
+            [95.3666629, 5.5754507],
+            [95.36677, 5.5754498],
+            [95.3667686, 5.575293],
+            [95.3666616, 5.5752939],
+            [95.3666629, 5.5754507]
+          ],
+          [
+            [95.3667628, 5.5756423],
+            [95.3668808, 5.5756423],
+            [95.3668808, 5.5754748],
+            [95.3667628, 5.5754748],
+            [95.3667628, 5.5756423]
+          ],
+          [
+            [95.3666763, 5.5756303],
+            [95.3667481, 5.5756303],
+            [95.3667481, 5.5755061],
+            [95.3666763, 5.5755061],
+            [95.3666763, 5.5756303]
+          ],
+          [
+            [95.3666391, 5.5757934],
+            [95.366747, 5.5757909],
+            [95.3667443, 5.5756801],
+            [95.3666364, 5.5756827],
+            [95.3666391, 5.5757934]
+          ],
+          [
+            [95.3667537, 5.5757868],
+            [95.3668918, 5.5757868],
+            [95.3668918, 5.5756547],
+            [95.3667537, 5.5756547],
+            [95.3667537, 5.5757868]
+          ],
+          [
+            [95.3667878, 5.5759175],
+            [95.3671277, 5.5759101],
+            [95.3671252, 5.5757987],
+            [95.3667854, 5.5758061],
+            [95.3667878, 5.5759175]
+          ],
+          [
+            [95.3671362, 5.5759102],
+            [95.3676827, 5.5758935],
+            [95.3676794, 5.5757847],
+            [95.3671329, 5.5758014],
+            [95.3671362, 5.5759102]
+          ],
+          [
+            [95.367686, 5.5758386],
+            [95.367789, 5.5758348],
+            [95.367785, 5.575727],
+            [95.367682, 5.5757308],
+            [95.367686, 5.5758386]
+          ],
+          [
+            [95.3675766, 5.5761526],
+            [95.3676905, 5.5761523],
+            [95.3676899, 5.5759027],
+            [95.3675759, 5.575903],
+            [95.3675766, 5.5761526]
+          ],
+          [
+            [95.3672956, 5.5761472],
+            [95.367573, 5.5761376],
+            [95.3675689, 5.5760228],
+            [95.3672916, 5.5760325],
+            [95.3672956, 5.5761472]
+          ],
+          [
+            [95.3670998, 5.5761519],
+            [95.3672843, 5.5761441],
+            [95.3672796, 5.5760346],
+            [95.3670951, 5.5760425],
+            [95.3670998, 5.5761519]
+          ],
+          [
+            [95.3669926, 5.5761593],
+            [95.3670962, 5.5761551],
+            [95.3670881, 5.5759569],
+            [95.3669845, 5.575961],
+            [95.3669926, 5.5761593]
+          ],
+          [
+            [95.3668157, 5.5761721],
+            [95.36699, 5.5761681],
+            [95.3669879, 5.5760736],
+            [95.3668135, 5.5760776],
+            [95.3668157, 5.5761721]
+          ]
+        ]
+      },
+      "id": "relation/7273030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/13416556",
+        "access:roof": "no",
+        "addr:full": "JL. SULTAN MAIKUL SALEH LHONG RAYA BANDA ACEH",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMK 2 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3206947, 5.5223792],
+            [95.3206021, 5.5225993],
+            [95.3203861, 5.5225092],
+            [95.3204118, 5.522448],
+            [95.3203707, 5.5224309],
+            [95.3204148, 5.5223262],
+            [95.3204563, 5.5223435],
+            [95.3204791, 5.5222893],
+            [95.3206947, 5.5223792]
+          ],
+          [
+            [95.3205695, 5.5224271],
+            [95.3205164, 5.5224048],
+            [95.3204884, 5.5224709],
+            [95.3205415, 5.5224931],
+            [95.3205695, 5.5224271]
+          ]
+        ]
+      },
+      "id": "relation/13416556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/13416557",
+        "access:roof": "no",
+        "addr:full": "Jl.sultan malikul saleh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "steel_frame",
+        "capacity:persons": "100-250",
+        "name": "SMK 2 BANDA ACEH",
+        "source": "survey",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3198597, 5.5225399],
+            [95.3191823, 5.5222398],
+            [95.319231, 5.5221308],
+            [95.3192632, 5.5221451],
+            [95.3193435, 5.5219657],
+            [95.3193056, 5.521949],
+            [95.3193551, 5.5218382],
+            [95.3200368, 5.5221402],
+            [95.3199864, 5.5222529],
+            [95.319947, 5.5222354],
+            [95.3198709, 5.5224056],
+            [95.3199117, 5.5224237],
+            [95.3198597, 5.5225399]
+          ],
+          [
+            [95.3196536, 5.522309],
+            [95.3197343, 5.5221363],
+            [95.3195456, 5.5220489],
+            [95.3194649, 5.5222216],
+            [95.3196536, 5.522309]
+          ]
+        ]
+      },
+      "id": "relation/13416557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/188843452",
+        "amenity": "school",
+        "name": "methodis"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.32242, 5.5621929],
+            [95.3224314, 5.5618152],
+            [95.3225414, 5.5618165],
+            [95.3226815, 5.5618185],
+            [95.3228136, 5.5618232],
+            [95.3228089, 5.5618472],
+            [95.3229913, 5.5618525],
+            [95.3229822, 5.5622138],
+            [95.322823, 5.5622069],
+            [95.3228284, 5.5621315],
+            [95.3225738, 5.5621162],
+            [95.3225698, 5.5621986],
+            [95.32242, 5.5621929]
+          ]
+        ]
+      },
+      "id": "way/188843452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/188846568",
+        "access:roof": "yes",
+        "addr:full": "jln twk hasyim banta muda",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "SMK SMTI Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3240723, 5.5635639],
+            [95.324071, 5.5635767],
+            [95.323874, 5.5635564],
+            [95.3238753, 5.5635437],
+            [95.3238662, 5.5635427],
+            [95.3238941, 5.563283],
+            [95.3238289, 5.5632761],
+            [95.3238371, 5.5632],
+            [95.3239023, 5.5632069],
+            [95.3239297, 5.5629529],
+            [95.3240553, 5.5629658],
+            [95.3240071, 5.5634312],
+            [95.3240632, 5.563437],
+            [95.3241112, 5.5629726],
+            [95.3242303, 5.5629848],
+            [95.324167, 5.5635736],
+            [95.3240723, 5.5635639]
+          ]
+        ]
+      },
+      "id": "way/188846568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/330739392",
+        "access:roof": "no",
+        "addr:full": "Jl.Sultan malikul saleh",
+        "amenity": "school",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.321778, 5.5214028],
+            [95.3219067, 5.5214551],
+            [95.3214887, 5.5226929],
+            [95.32131, 5.523057],
+            [95.3209216, 5.5229744],
+            [95.3208854, 5.5230077],
+            [95.3208653, 5.5232321],
+            [95.3208089, 5.5236013],
+            [95.320195, 5.5235308],
+            [95.3201528, 5.5236013],
+            [95.3196178, 5.5234685],
+            [95.3194967, 5.5234726],
+            [95.3192754, 5.5234031],
+            [95.3189358, 5.5232964],
+            [95.3189631, 5.5232327],
+            [95.3187997, 5.5231596],
+            [95.318944, 5.5226339],
+            [95.3190992, 5.5221353],
+            [95.3193469, 5.5215337],
+            [95.3193605, 5.521367],
+            [95.3194763, 5.5210812],
+            [95.3211128, 5.5211884],
+            [95.3214352, 5.52125],
+            [95.321778, 5.5214028]
+          ]
+        ]
+      },
+      "id": "way/330739392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/386255063",
+        "access:roof": "no",
+        "addr:full": "jalan blang sawang",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "wood",
+        "building:roof": "tin",
+        "building:structure": "wood_frame",
+        "capacity:persons": "50-100",
+        "name": "Pesantren Darul Fikri",
+        "operator:type": "community",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.295268, 5.5507381],
+            [95.295283, 5.5505895],
+            [95.2954047, 5.5506017],
+            [95.2953896, 5.5507503],
+            [95.295268, 5.5507381]
+          ]
+        ]
+      },
+      "id": "way/386255063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/386581448",
+        "access:roof": "no",
+        "addr:full": "jl.tgk.chik cot Aron.desa lamjabat",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SMP NEGERI 11 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2941186, 5.5461601],
+            [95.2942703, 5.5458532],
+            [95.2943083, 5.5458718],
+            [95.2943437, 5.5458001],
+            [95.2947884, 5.5460179],
+            [95.2945674, 5.5464649],
+            [95.2941227, 5.546247],
+            [95.2941565, 5.5461787],
+            [95.2941186, 5.5461601]
+          ]
+        ]
+      },
+      "id": "way/386581448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/386647389",
+        "access:roof": "no",
+        "addr:full": "jln. Kampus Unida",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "MTS N 3 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3024826, 5.5413366],
+            [95.3023055, 5.5412869],
+            [95.3023337, 5.5411871],
+            [95.302415, 5.5412099],
+            [95.3025115, 5.5408693],
+            [95.3026073, 5.5408962],
+            [95.3024826, 5.5413366]
+          ]
+        ]
+      },
+      "id": "way/386647389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403366655",
+        "access:roof": "yes",
+        "addr:full": "jalan prof Majid Ibrahim",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "madrasah Tsanawiyah darussyari'ah",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3133414, 5.5540513],
+            [95.3134355, 5.5540481],
+            [95.3134406, 5.5541968],
+            [95.3133464, 5.5542],
+            [95.3133414, 5.5540513]
+          ]
+        ]
+      },
+      "id": "way/403366655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403376654",
+        "access:roof": "no",
+        "addr:full": "Jl. Prof A. Majid Ibrahim 1 No.31 Merduati",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMP MUHAMMADIYAH 1",
+        "operator:type": "community",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3135975, 5.5553828],
+            [95.3137397, 5.5553929],
+            [95.3137608, 5.5551006],
+            [95.3137042, 5.5550965],
+            [95.3136941, 5.5552373],
+            [95.3136088, 5.5552312],
+            [95.3136246, 5.5550122],
+            [95.3138482, 5.5550282],
+            [95.3138145, 5.5554954],
+            [95.3135905, 5.5554794],
+            [95.3135975, 5.5553828]
+          ]
+        ]
+      },
+      "id": "way/403376654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403558274",
+        "access:roof": "no",
+        "amenity": "school",
+        "name": "SMP NEGERI 8 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3654525, 5.5761476],
+            [95.3654619, 5.5756831],
+            [95.3649987, 5.5755305],
+            [95.3651475, 5.5751488],
+            [95.366608, 5.575086],
+            [95.3666154, 5.5761585],
+            [95.3654525, 5.5761476]
+          ]
+        ]
+      },
+      "id": "way/403558274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403558275",
+        "access:roof": "no",
+        "addr:full": "jl Inong balee No 2 kopelma Darussalam",
+        "amenity": "school",
+        "name": "SMA LAB SCHOOL UNSYIAH",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.365194, 5.5750221],
+            [95.3654986, 5.5741944],
+            [95.366087, 5.5741667],
+            [95.3661124, 5.5749806],
+            [95.365194, 5.5750221]
+          ]
+        ]
+      },
+      "id": "way/403558275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/405686671",
+        "access:roof": "no",
+        "addr:full": "jln tgk chik ditiro kel peniti",
+        "amenity": "school",
+        "building": "yes",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SDN 3 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3210507, 5.5514067],
+            [95.3211583, 5.5514017],
+            [95.3211692, 5.5516311],
+            [95.3212544, 5.5516271],
+            [95.3212509, 5.551553],
+            [95.321425, 5.5515449],
+            [95.3214285, 5.5516189],
+            [95.3215213, 5.5516146],
+            [95.3215106, 5.5513889],
+            [95.3216353, 5.5513831],
+            [95.3216512, 5.5517197],
+            [95.3210667, 5.5517471],
+            [95.3210507, 5.5514067]
+          ]
+        ]
+      },
+      "id": "way/405686671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/405686911",
+        "access:roof": "no",
+        "addr:full": "jln tgk chik ditiro ateuk pahlawan",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMK Formasi Cut Mutia",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3259651, 5.5515544],
+            [95.3260512, 5.5515508],
+            [95.3260445, 5.5513903],
+            [95.3257672, 5.5514019],
+            [95.3257626, 5.5512929],
+            [95.3258442, 5.5512895],
+            [95.3258423, 5.5512455],
+            [95.3258946, 5.5512433],
+            [95.3258965, 5.5512873],
+            [95.3261359, 5.5512773],
+            [95.3261363, 5.5512882],
+            [95.3261708, 5.5512867],
+            [95.3261746, 5.5513758],
+            [95.3261477, 5.551377],
+            [95.3261489, 5.551406],
+            [95.3262036, 5.5514038],
+            [95.3262108, 5.5515743],
+            [95.3261561, 5.5515765],
+            [95.32616, 5.5516676],
+            [95.3260689, 5.5516714],
+            [95.3260708, 5.5517171],
+            [95.3259721, 5.5517212],
+            [95.3259651, 5.5515544]
+          ]
+        ]
+      },
+      "id": "way/405686911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/406058919",
+        "access:roof": "no",
+        "addr:full": "jl Tgk lampoh bungung batoh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SDN 60",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3274444, 5.5397107],
+            [95.3274615, 5.5394115],
+            [95.3275598, 5.5394171],
+            [95.3275586, 5.539437],
+            [95.3277714, 5.5394491],
+            [95.3277654, 5.5395533],
+            [95.3275527, 5.5395413],
+            [95.3275427, 5.5397163],
+            [95.3274444, 5.5397107]
+          ]
+        ]
+      },
+      "id": "way/406058919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/468197340",
+        "access:roof": "yes",
+        "addr:housenumber": "6",
+        "addr:street": "Jalan Cinta Kasih Barat",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tile",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SMP Negeri 14",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3384979, 5.5475902],
+            [95.3384371, 5.5476985],
+            [95.3383987, 5.5476772],
+            [95.338208, 5.5475711],
+            [95.3381022, 5.5477597],
+            [95.3382973, 5.5478682],
+            [95.3383153, 5.5478782],
+            [95.3383965, 5.5477335],
+            [95.3384933, 5.5477874],
+            [95.3383562, 5.5480317],
+            [95.3382547, 5.5479753],
+            [95.3382473, 5.5479884],
+            [95.3378524, 5.5477688],
+            [95.3380823, 5.5473592],
+            [95.3384979, 5.5475902]
+          ]
+        ]
+      },
+      "id": "way/468197340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/468197364",
+        "access:roof": "no",
+        "addr:full": "jln Mujahidin 2",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SMA Inshafuddin",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3339365, 5.5704009],
+            [95.3341196, 5.5702066],
+            [95.3340681, 5.5701584],
+            [95.3342537, 5.5699614],
+            [95.3342595, 5.5699669],
+            [95.3345996, 5.5696059],
+            [95.3349955, 5.5699753],
+            [95.3348949, 5.5700821],
+            [95.3348768, 5.5700651],
+            [95.3348291, 5.5700207],
+            [95.3348575, 5.5699906],
+            [95.3346672, 5.5698129],
+            [95.334615, 5.5697642],
+            [95.3343568, 5.5700382],
+            [95.3344266, 5.5701033],
+            [95.3342391, 5.5703022],
+            [95.3342117, 5.5702766],
+            [95.3340206, 5.5704794],
+            [95.3339365, 5.5704009]
+          ]
+        ]
+      },
+      "id": "way/468197364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/468639406",
+        "amenity": "school",
+        "name": "SMA Negeri 7 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3083309, 5.534694],
+            [95.3090639, 5.5347345],
+            [95.3089251, 5.5354274],
+            [95.3085052, 5.5354042],
+            [95.3082866, 5.5351452],
+            [95.3083309, 5.534694]
+          ]
+        ]
+      },
+      "id": "way/468639406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/468639432",
+        "access:roof": "yes",
+        "addr:full": "jln pocut baren",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Negeri 20 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3230951, 5.5618838],
+            [95.3231798, 5.5618873],
+            [95.3231726, 5.5620601],
+            [95.3234555, 5.5620717],
+            [95.3234626, 5.5618989],
+            [95.323542, 5.5619021],
+            [95.3235296, 5.5622034],
+            [95.3234462, 5.5622],
+            [95.3234478, 5.562159],
+            [95.3234011, 5.5621571],
+            [95.3233986, 5.5622176],
+            [95.3234474, 5.5622196],
+            [95.3234455, 5.5622654],
+            [95.3233256, 5.5622605],
+            [95.32333, 5.5621542],
+            [95.3230844, 5.5621441],
+            [95.3230951, 5.5618838]
+          ]
+        ]
+      },
+      "id": "way/468639432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/490042614",
+        "access:roof": "no",
+        "addr:full": "jln.ulee lheue ds.ulee pata",
+        "amenity": "school",
+        "building": "kindergarten",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "<50",
+        "name": "Taman Pendidikan Al-qur'an",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2842806, 5.5417829],
+            [95.2842384, 5.5416401],
+            [95.2843844, 5.5415973],
+            [95.2844267, 5.5417401],
+            [95.2842806, 5.5417829]
+          ]
+        ]
+      },
+      "id": "way/490042614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/490834926",
+        "access:roof": "no",
+        "addr:full": "aluenaga",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tile",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SDN 58",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3418912, 5.5965001],
+            [95.3419078, 5.596294],
+            [95.3419917, 5.5963007],
+            [95.3419918, 5.5963001],
+            [95.3420806, 5.5963072],
+            [95.3420806, 5.5963068],
+            [95.3422003, 5.5963164],
+            [95.3421972, 5.5963555],
+            [95.3421827, 5.5965345],
+            [95.3420644, 5.596525],
+            [95.3420773, 5.5963652],
+            [95.342017, 5.5963604],
+            [95.342005, 5.5965092],
+            [95.3418912, 5.5965001]
+          ]
+        ]
+      },
+      "id": "way/490834926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/496035753",
+        "access:roof": "no",
+        "addr:full": "Jln. T. Di Lhong II",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "MTS Lhong Raya",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3203909, 5.5258082],
+            [95.3204311, 5.5256454],
+            [95.3207076, 5.525713],
+            [95.3206674, 5.5258759],
+            [95.3203909, 5.5258082]
+          ]
+        ]
+      },
+      "id": "way/496035753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/499772025",
+        "amenity": "school",
+        "name": "Yayasan Budi Darma"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3143202, 5.5484305],
+            [95.3140788, 5.5474446],
+            [95.314517, 5.5474144],
+            [95.3145537, 5.5483678],
+            [95.314514, 5.5483747],
+            [95.3143202, 5.5484305]
+          ]
+        ]
+      },
+      "id": "way/499772025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/510894639",
+        "access:roof": "no",
+        "addr:full": "jln Syiah kuala",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SD Negeri 41 Kita Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3285518, 5.5740494],
+            [95.3286124, 5.573753],
+            [95.328708, 5.5737724],
+            [95.328662, 5.573997],
+            [95.3287465, 5.5740141],
+            [95.3287318, 5.5740859],
+            [95.3285518, 5.5740494]
+          ]
+        ]
+      },
+      "id": "way/510894639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/510897880",
+        "access:roof": "no",
+        "addr:full": "jalan rawa sakti vll",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "sdn 61",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3491331, 5.5810326],
+            [95.3491552, 5.5810062],
+            [95.3488325, 5.5807378],
+            [95.3488843, 5.580676],
+            [95.349267, 5.5809944],
+            [95.3491423, 5.5811428],
+            [95.348757, 5.5808223],
+            [95.3488078, 5.5807619],
+            [95.3491331, 5.5810326]
+          ]
+        ]
+      },
+      "id": "way/510897880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/556941495",
+        "access:roof": "yes",
+        "addr:full": "jln. cut nyak Dhien lamteumen barat",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "Kemala bhyangkari",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2967243, 5.5301578],
+            [95.2970446, 5.5303482],
+            [95.2969837, 5.5304496],
+            [95.2967484, 5.5303098],
+            [95.296613, 5.5305354],
+            [95.2965281, 5.5304849],
+            [95.2967243, 5.5301578]
+          ]
+        ]
+      },
+      "id": "way/556941495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/564189220",
+        "access:roof": "no",
+        "addr:full": "jln. Banda Jaya",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD N 9 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3034597, 5.5325107],
+            [95.3034688, 5.53243],
+            [95.3033706, 5.532419],
+            [95.3033847, 5.5322942],
+            [95.3035772, 5.5323158],
+            [95.303554, 5.5325213],
+            [95.3034597, 5.5325107]
+          ]
+        ]
+      },
+      "id": "way/564189220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591973762",
+        "addr:full": "Jalan Prof Majid Ibrahim",
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "SMP Negeri 1 Banda Aceh",
+        "operator:type": "government",
+        "ref": "10105436",
+        "school:type_idn": "smp",
+        "short_name": "SMPN 1 Banda Aceh",
+        "source": "survey",
+        "wikidata": "Q12510986"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3120899, 5.5527784],
+            [95.3118351, 5.5519873],
+            [95.3127811, 5.5516855],
+            [95.3130358, 5.5524766],
+            [95.3120899, 5.5527784]
+          ]
+        ]
+      },
+      "id": "way/591973762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/594158389",
+        "access:roof": "no",
+        "addr:full": "jl Utama Desa Rukoh lr.Mesjid",
+        "amenity": "school",
+        "capacity:persons": "250-500",
+        "name": "SDNi 19",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3689107, 5.5841184],
+            [95.3691226, 5.5834858],
+            [95.3692581, 5.5835285],
+            [95.3691803, 5.583754],
+            [95.3693292, 5.5838114],
+            [95.3692862, 5.5839449],
+            [95.3691789, 5.5839129],
+            [95.369136, 5.584041],
+            [95.3692138, 5.5840757],
+            [95.3691659, 5.584227],
+            [95.3689107, 5.5841184]
+          ]
+        ]
+      },
+      "id": "way/594158389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556694",
+        "addr:full": "Jl. Tak Raja Keumala No.8 Merduati",
+        "amenity": "school",
+        "name": "SD Negeri 8 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3104428, 5.5607694],
+            [95.3104372, 5.5605892],
+            [95.3103876, 5.5605918],
+            [95.3103729, 5.5602468],
+            [95.310574, 5.5602394],
+            [95.3108704, 5.5602288],
+            [95.3108731, 5.5607674],
+            [95.3104428, 5.5607694]
+          ]
+        ]
+      },
+      "id": "way/622556694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556696",
+        "addr:full": "Jl. Rama setia Lr. Pendidikan",
+        "amenity": "school",
+        "name": "SMA Negeri 14",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3096151, 5.5593692],
+            [95.3095561, 5.5591276],
+            [95.310275, 5.5590141],
+            [95.3102736, 5.5593091],
+            [95.3096151, 5.5593692]
+          ]
+        ]
+      },
+      "id": "way/622556696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556697",
+        "amenity": "school",
+        "name": "SD Negeri 6 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3141655, 5.5624325],
+            [95.3142245, 5.5619867],
+            [95.3144981, 5.5619907],
+            [95.3144981, 5.5624045],
+            [95.3141655, 5.5624325]
+          ]
+        ]
+      },
+      "id": "way/622556697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556699",
+        "amenity": "school",
+        "name": "SD Negeri 17 Peulanggahan",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3172983, 5.5645909],
+            [95.3172366, 5.5641944],
+            [95.3175612, 5.5641611],
+            [95.3176028, 5.5645455],
+            [95.3172983, 5.5645909]
+          ]
+        ]
+      },
+      "id": "way/622556699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556700",
+        "addr:full": "Jl. Pawang Hitam no.3 GP. Jawa",
+        "amenity": "school",
+        "name": "SD Negeri 70",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3204311, 5.5718133],
+            [95.3204593, 5.5725982],
+            [95.3201381, 5.5726199],
+            [95.3201193, 5.5724787],
+            [95.3200724, 5.5722084],
+            [95.3200141, 5.571832],
+            [95.3201421, 5.5718093],
+            [95.3204311, 5.5718133]
+          ]
+        ]
+      },
+      "id": "way/622556700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556707",
+        "access:roof": "no",
+        "addr:full": "Jalan Pawang Hitam No. 2",
+        "amenity": "school",
+        "name": "SMP Negeri 12",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3195031, 5.5726609],
+            [95.3193234, 5.5720816],
+            [95.3200208, 5.5719268],
+            [95.3201281, 5.5726035],
+            [95.3200466, 5.5726112],
+            [95.3198883, 5.5726265],
+            [95.3196593, 5.5726536],
+            [95.3195732, 5.5726592],
+            [95.3195031, 5.5726609]
+          ]
+        ]
+      },
+      "id": "way/622556707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622556708",
+        "addr:full": "Jl. Lampoh Kuta No. 2 E",
+        "amenity": "school",
+        "name": "SMA Negeri 13",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.319601, 5.5729279],
+            [95.3195085, 5.5726803],
+            [95.3195722, 5.5726656],
+            [95.3196828, 5.5726596],
+            [95.319768, 5.5726776],
+            [95.3199846, 5.5726522],
+            [95.3201374, 5.5726282],
+            [95.320415, 5.5726229],
+            [95.3204385, 5.573042],
+            [95.319601, 5.5729279]
+          ]
+        ]
+      },
+      "id": "way/622556708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622978719",
+        "access:roof": "no",
+        "addr:full": "Jl. Mesjid alQurban no.5 gp.lampeuot",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "Dayah Madinatul Fata",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3131409, 5.5207821],
+            [95.3128787, 5.5207471],
+            [95.3128881, 5.5206766],
+            [95.3130725, 5.5207012],
+            [95.3131105, 5.520419],
+            [95.3131884, 5.5204294],
+            [95.3131409, 5.5207821]
+          ]
+        ]
+      },
+      "id": "way/622978719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623008308",
+        "access:roof": "no",
+        "addr:full": "Jln. Sultan Malikul Saleh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tile",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "Madrasah Ibtidaiyah Negeri 8 Kota Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3227025, 5.5209415],
+            [95.3227026, 5.5208261],
+            [95.3226641, 5.520826],
+            [95.3226641, 5.5206939],
+            [95.3227007, 5.5206939],
+            [95.3227007, 5.5205812],
+            [95.3227538, 5.5205812],
+            [95.3227538, 5.520542],
+            [95.3229265, 5.520542],
+            [95.3229264, 5.5206664],
+            [95.3228209, 5.5206664],
+            [95.3228208, 5.5208512],
+            [95.3229291, 5.5208512],
+            [95.3229291, 5.5209665],
+            [95.3227699, 5.5209665],
+            [95.3227699, 5.5209415],
+            [95.3227025, 5.5209415]
+          ]
+        ]
+      },
+      "id": "way/623008308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623008319",
+        "access:roof": "no",
+        "addr:full": "Jln. H.T. Ibnu Sa'adan Gampong Peuyerat. Kec. Banda Raya",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tile",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "SD Negeri 52 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3253548, 5.5298635],
+            [95.3253664, 5.5297612],
+            [95.3256392, 5.5297918],
+            [95.3256192, 5.5299687],
+            [95.3255576, 5.5299618],
+            [95.3255513, 5.530018],
+            [95.3256005, 5.5300235],
+            [95.3255868, 5.530145],
+            [95.3253614, 5.5301198],
+            [95.3253752, 5.5299974],
+            [95.3255065, 5.5300121],
+            [95.3255202, 5.5298911],
+            [95.3254042, 5.5298781],
+            [95.3253913, 5.5299927],
+            [95.3252958, 5.529982],
+            [95.3253097, 5.5298585],
+            [95.3253548, 5.5298635]
+          ]
+        ]
+      },
+      "id": "way/623008319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623008347",
+        "access:roof": "no",
+        "addr:full": "Jln. M. ALI YUSUF",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SD Negeri 68 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3163563, 5.5283131],
+            [95.3163382, 5.5285562],
+            [95.3162268, 5.528548],
+            [95.3162383, 5.528394],
+            [95.316059, 5.5283807],
+            [95.3160494, 5.5285096],
+            [95.3159489, 5.5285022],
+            [95.3159652, 5.5282841],
+            [95.3163563, 5.5283131]
+          ]
+        ]
+      },
+      "id": "way/623008347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623008350",
+        "access:roof": "no",
+        "addr:full": "Jln. Sultan Malikul Saleh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "SMA Negeri 9 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.325068, 5.5246934],
+            [95.3251769, 5.5246905],
+            [95.3251956, 5.525378],
+            [95.3250868, 5.5253809],
+            [95.325068, 5.5246934]
+          ]
+        ]
+      },
+      "id": "way/623008350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623031239",
+        "access:roof": "no",
+        "addr:full": "jln T.M.pahlawan no9 ateuk pahlawan",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "MIN 1 Kota Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3244351, 5.5475081],
+            [95.3244292, 5.5473896],
+            [95.3247244, 5.547375],
+            [95.3247303, 5.5474939],
+            [95.3245797, 5.5475013],
+            [95.3245806, 5.5475194],
+            [95.3245132, 5.5475227],
+            [95.3245123, 5.5475043],
+            [95.3244351, 5.5475081]
+          ]
+        ]
+      },
+      "id": "way/623031239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623031240",
+        "access:roof": "no",
+        "addr:full": "jl nyak adam kamil ll 2",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SD Kartika XIV 2",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3207823, 5.5428621],
+            [95.3205133, 5.5428778],
+            [95.3205076, 5.5427801],
+            [95.320875, 5.5427587],
+            [95.3208998, 5.5431788],
+            [95.3208013, 5.5431845],
+            [95.3207823, 5.5428621]
+          ]
+        ]
+      },
+      "id": "way/623031240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623031251",
+        "access:roof": "no",
+        "addr:full": "jl nyak adam kamil lv no1",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMU Kartika XLV 1",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3203652, 5.5435543],
+            [95.3207907, 5.5435503],
+            [95.3207934, 5.5438383],
+            [95.3207045, 5.5438392],
+            [95.3207027, 5.5436576],
+            [95.3203662, 5.5436608],
+            [95.3203652, 5.5435543]
+          ]
+        ]
+      },
+      "id": "way/623031251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623031268",
+        "access:roof": "no",
+        "addr:full": "jln sekolah no 6 labui",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Luar Biasa (SDLB)",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3257661, 5.5493421],
+            [95.3258521, 5.5493373],
+            [95.3258641, 5.5495522],
+            [95.3257781, 5.549557],
+            [95.3257661, 5.5493421]
+          ]
+        ]
+      },
+      "id": "way/623031268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623031272",
+        "access:roof": "no",
+        "addr:full": "jl labui",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Negeri 30 Labui",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.326108, 5.5488922],
+            [95.326107, 5.5487933],
+            [95.3262303, 5.548792],
+            [95.3262314, 5.5488909],
+            [95.326108, 5.5488922]
+          ]
+        ]
+      },
+      "id": "way/623031272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624293667",
+        "addr:full": "jl. sri raja pakeh GP. bitai",
+        "amenity": "school",
+        "name": "SD negeri 59 Bitai",
+        "operator:type": "government",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2932634, 5.5371747],
+            [95.2932449, 5.537063],
+            [95.2934806, 5.5370216],
+            [95.293537, 5.5372158],
+            [95.2933757, 5.5372585],
+            [95.293364, 5.5372175],
+            [95.2932761, 5.5372355],
+            [95.2932634, 5.5371747]
+          ]
+        ]
+      },
+      "id": "way/624293667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624301618",
+        "access:roof": "no",
+        "addr:full": "jln. Pemancar",
+        "amenity": "school",
+        "name": "SD N 26 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3045578, 5.5369615],
+            [95.3045478, 5.5369161],
+            [95.3045692, 5.5366672],
+            [95.3049793, 5.5366515],
+            [95.304985, 5.5366725],
+            [95.304987, 5.5367012],
+            [95.3050031, 5.5367673],
+            [95.3050353, 5.536792],
+            [95.3050272, 5.5369001],
+            [95.3050179, 5.5369949],
+            [95.3045578, 5.5369615]
+          ]
+        ]
+      },
+      "id": "way/624301618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624301630",
+        "addr:full": "jln. Pemancar",
+        "amenity": "school",
+        "name": "SD N 37 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3048033, 5.5395337],
+            [95.304824, 5.539447],
+            [95.304873, 5.5392775],
+            [95.3050353, 5.5393162],
+            [95.3052914, 5.5393936],
+            [95.3052163, 5.5396686],
+            [95.3048033, 5.5395337]
+          ]
+        ]
+      },
+      "id": "way/624301630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624301645",
+        "addr:full": "jl. Punge Blangcut",
+        "amenity": "school",
+        "name": "SD N 18 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3078314, 5.543886],
+            [95.3078818, 5.5439707],
+            [95.3078838, 5.5441062],
+            [95.3078938, 5.5441713],
+            [95.3078969, 5.5444777],
+            [95.307804, 5.5444953],
+            [95.307802, 5.5447183],
+            [95.3077497, 5.5447329],
+            [95.3077465, 5.5448346],
+            [95.3075746, 5.544829],
+            [95.3073547, 5.5446439],
+            [95.3073916, 5.544243],
+            [95.3076403, 5.5442498],
+            [95.3076552, 5.5438809],
+            [95.3078314, 5.543886]
+          ]
+        ]
+      },
+      "id": "way/624301645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624302994",
+        "access:roof": "no",
+        "addr:full": "Jl. ateuk jawo gampong ateuk jawo",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "50-100",
+        "name": "SD Negeri 64 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3248742, 5.5354317],
+            [95.3250445, 5.5354317],
+            [95.3250445, 5.5355158],
+            [95.3248742, 5.5355158],
+            [95.3248742, 5.5354317]
+          ]
+        ]
+      },
+      "id": "way/624302994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624325932",
+        "addr:full": "jln.soekarno hartta",
+        "amenity": "school",
+        "name": "SD Negeri 51 Banda aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3004286, 5.5222927],
+            [95.3006834, 5.5219977],
+            [95.3007558, 5.5220431],
+            [95.3008765, 5.5218789],
+            [95.3010173, 5.5219857],
+            [95.3009449, 5.5220778],
+            [95.3006431, 5.5224622],
+            [95.3004286, 5.5222927]
+          ]
+        ]
+      },
+      "id": "way/624325932"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624325942",
+        "access:roof": "yes",
+        "addr:full": "jln surdiman",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "<50",
+        "name": "SMU TEUKU NYAK ARIEf",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3010913, 5.5254953],
+            [95.3010546, 5.5253001],
+            [95.3011753, 5.5252776],
+            [95.3012287, 5.5255706],
+            [95.3010049, 5.5256122],
+            [95.3009867, 5.5255148],
+            [95.3010913, 5.5254953]
+          ]
+        ]
+      },
+      "id": "way/624325942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624325950",
+        "addr:full": "jln.cut nyak dhien",
+        "amenity": "school",
+        "name": "MIN NEGERI 7",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.296884, 5.5310027],
+            [95.2970047, 5.5307755],
+            [95.2972341, 5.5304007],
+            [95.2976622, 5.5306577],
+            [95.2975667, 5.5308329],
+            [95.2974413, 5.5310608],
+            [95.2973212, 5.5312537],
+            [95.2971388, 5.5311602],
+            [95.296884, 5.5310027]
+          ]
+        ]
+      },
+      "id": "way/624325950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624325951",
+        "addr:full": "jln.cut nyak dhien",
+        "amenity": "school",
+        "name": "MAN 2 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2974272, 5.5311142],
+            [95.2975465, 5.5308786],
+            [95.2975827, 5.5308285],
+            [95.2976679, 5.5306723],
+            [95.2982748, 5.5309734],
+            [95.2982251, 5.5310828],
+            [95.2980763, 5.5313938],
+            [95.2977638, 5.531275],
+            [95.2974272, 5.5311142]
+          ]
+        ]
+      },
+      "id": "way/624325951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624342167",
+        "access:roof": "yes",
+        "addr:full": "jln syiah kuala",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "concrete",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "Dayah Modern Darul Ulum",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3298317, 5.5607652],
+            [95.3296773, 5.5607531],
+            [95.3297392, 5.5599699],
+            [95.3298249, 5.5599766],
+            [95.3297726, 5.5606382],
+            [95.3298414, 5.5606436],
+            [95.3298317, 5.5607652]
+          ]
+        ]
+      },
+      "id": "way/624342167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624342170",
+        "access:roof": "no",
+        "addr:full": "jln teladan",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SD Negeri 28 GP Keuramat",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3276382, 5.561158],
+            [95.3278692, 5.5612392],
+            [95.3279203, 5.5610952],
+            [95.3279913, 5.5611202],
+            [95.3279399, 5.5612652],
+            [95.3278903, 5.5612477],
+            [95.3278579, 5.561339],
+            [95.3275392, 5.561227],
+            [95.3275712, 5.5611367],
+            [95.3275489, 5.5611288],
+            [95.3275946, 5.5610002],
+            [95.3276832, 5.5610314],
+            [95.3276382, 5.561158]
+          ]
+        ]
+      },
+      "id": "way/624342170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624342189",
+        "access:roof": "yes",
+        "addr:full": "jln twk hasyim banta muda",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Negeri 27 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3246582, 5.5648304],
+            [95.3247062, 5.5645315],
+            [95.3248016, 5.5645467],
+            [95.3247389, 5.564937],
+            [95.3244623, 5.564893],
+            [95.324477, 5.5648016],
+            [95.3246582, 5.5648304]
+          ]
+        ]
+      },
+      "id": "way/624342189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624342191",
+        "access:roof": "yes",
+        "addr:full": "jln pocut baren",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "MTS Negeri Model Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3285868, 5.5623343],
+            [95.328911, 5.5623987],
+            [95.3288909, 5.5624994],
+            [95.3287698, 5.5624753],
+            [95.3287614, 5.562517],
+            [95.3286644, 5.5624977],
+            [95.3286725, 5.5624571],
+            [95.3285664, 5.5624361],
+            [95.3285868, 5.5623343]
+          ]
+        ]
+      },
+      "id": "way/624342191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368599",
+        "access:roof": "yes",
+        "addr:full": "jln pocut baren no 3",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "concrete",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Methodist Banda Aceh",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3214773, 5.562057],
+            [95.3214418, 5.5620559],
+            [95.3214447, 5.5619655],
+            [95.3214813, 5.5619666],
+            [95.3214855, 5.5618376],
+            [95.3216195, 5.5618419],
+            [95.3216154, 5.561969],
+            [95.3216425, 5.5619698],
+            [95.3216396, 5.5620603],
+            [95.3216114, 5.5620593],
+            [95.3216106, 5.5620842],
+            [95.3214766, 5.5620799],
+            [95.3214773, 5.562057]
+          ]
+        ]
+      },
+      "id": "way/624368599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368601",
+        "access:roof": "yes",
+        "addr:full": "jln pocut baren no 3",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "concrete",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMA Methodist",
+        "operator:type": "private",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3216623, 5.5618666],
+            [95.3218527, 5.5618719],
+            [95.3218501, 5.5619649],
+            [95.3216596, 5.5619596],
+            [95.3216623, 5.5618666]
+          ]
+        ]
+      },
+      "id": "way/624368601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368602",
+        "access:roof": "yes",
+        "addr:full": "jln pocut baren no 3",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "concrete",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMP Methodist Banda Aceh",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3218608, 5.5620508],
+            [95.3218668, 5.5618726],
+            [95.3220304, 5.5618781],
+            [95.3220244, 5.5620562],
+            [95.3218608, 5.5620508]
+          ]
+        ]
+      },
+      "id": "way/624368602"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368605",
+        "access:roof": "yes",
+        "addr:full": "jln syiah kuala",
+        "amenity": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SMP Islam YPUI Darul Ulum",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3297813, 5.5608281],
+            [95.3297424, 5.561374],
+            [95.3295772, 5.5613624],
+            [95.3296161, 5.5608164],
+            [95.3297813, 5.5608281]
+          ]
+        ]
+      },
+      "id": "way/624368605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368618",
+        "access:roof": "yes",
+        "addr:full": "jln masjid al huda",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Negeri 36 Laksana Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3237524, 5.5593471],
+            [95.3238275, 5.5590722],
+            [95.3239244, 5.5590984],
+            [95.3238493, 5.5593734],
+            [95.3237524, 5.5593471]
+          ]
+        ]
+      },
+      "id": "way/624368618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368622",
+        "access:roof": "yes",
+        "addr:full": "jln twk hasyim banta muda",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "Madrasah Ibtidaiyah Negeri 2",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3232757, 5.5648861],
+            [95.3234677, 5.5649062],
+            [95.3234562, 5.5650153],
+            [95.3232672, 5.5649955],
+            [95.3232309, 5.5653386],
+            [95.3231323, 5.5653282],
+            [95.3231844, 5.5648362],
+            [95.3232799, 5.5648462],
+            [95.3232757, 5.5648861]
+          ]
+        ]
+      },
+      "id": "way/624368622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368639",
+        "access:roof": "yes",
+        "addr:full": "jln syiah kuala",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": ">500",
+        "name": "Madrasah Ibtidaiyah Negeri 6 Model",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3296994, 5.5621872],
+            [95.3295141, 5.5621742],
+            [95.3295197, 5.5620952],
+            [95.3296176, 5.5621021],
+            [95.3296523, 5.5616147],
+            [95.3295523, 5.5616076],
+            [95.3295579, 5.5615288],
+            [95.3297453, 5.561542],
+            [95.3296994, 5.5621872]
+          ]
+        ]
+      },
+      "id": "way/624368639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624368642",
+        "access:roof": "yes",
+        "addr:full": "jln pelangi gp mulia",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SMA Negeri 15 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3281975, 5.5649413],
+            [95.3283141, 5.5646076],
+            [95.3284074, 5.5646399],
+            [95.3282907, 5.5649736],
+            [95.3281975, 5.5649413]
+          ]
+        ]
+      },
+      "id": "way/624368642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/624966842",
+        "addr:full": "perumahan cinta kasih",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "Sekolah Dasar Negeri 10",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3391328, 5.5481522],
+            [95.3390915, 5.5482181],
+            [95.3390498, 5.5481944],
+            [95.3389577, 5.5483547],
+            [95.3384512, 5.5480664],
+            [95.3386776, 5.5476723],
+            [95.3391883, 5.547963],
+            [95.3390927, 5.5481294],
+            [95.3391328, 5.5481522]
+          ]
+        ]
+      },
+      "id": "way/624966842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625013770",
+        "access:roof": "no",
+        "addr:full": "jln Mujahidin",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "50-100",
+        "name": "SDN 45 Lambaro Skep",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3303955, 5.5694014],
+            [95.330409, 5.5692105],
+            [95.3305258, 5.5692187],
+            [95.3305123, 5.5694095],
+            [95.3303955, 5.5694014]
+          ]
+        ]
+      },
+      "id": "way/625013770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023200",
+        "addr:full": "gampong lampoh daya kec.jaya baru",
+        "amenity": "school",
+        "name": "SD NEGERI 39",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2872388, 5.5356253],
+            [95.2872629, 5.5353317],
+            [95.2874453, 5.5353477],
+            [95.2875955, 5.535357],
+            [95.2875902, 5.5355519],
+            [95.2875835, 5.5356347],
+            [95.2873555, 5.5357094],
+            [95.2872388, 5.5356253]
+          ]
+        ]
+      },
+      "id": "way/625023200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023202",
+        "addr:full": "jln .utama no 28 lamjamee jaya baru",
+        "amenity": "school",
+        "name": "SMP NEGERI 15 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2872857, 5.5384952],
+            [95.2875123, 5.5384068],
+            [95.2876069, 5.5383845],
+            [95.2878255, 5.5383871],
+            [95.2880233, 5.5387983],
+            [95.2874655, 5.5389865],
+            [95.2872857, 5.5384952]
+          ]
+        ]
+      },
+      "id": "way/625023202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023205",
+        "addr:full": "JLN.pendidikan desa lamjabat kec.meuraxa kota banda aceh",
+        "amenity": "school",
+        "name": "SEKOLAH DASAR NEGERI 49",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2958071, 5.5480887],
+            [95.2963167, 5.5479179],
+            [95.2964059, 5.5482322],
+            [95.2960425, 5.548375],
+            [95.2960623, 5.5484575],
+            [95.2959587, 5.5484945],
+            [95.2958071, 5.5480887]
+          ]
+        ]
+      },
+      "id": "way/625023205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023208",
+        "addr:full": "jl.lambeudee no 108,gp asoe nanggroe,kec.meuraxa",
+        "amenity": "school",
+        "name": "SD NEGERI 23 KOTA BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.287208, 5.5430137],
+            [95.2871905, 5.5426866],
+            [95.2873253, 5.5426806],
+            [95.287326, 5.5427227],
+            [95.2875325, 5.5427147],
+            [95.287554, 5.5429923],
+            [95.287208, 5.5430137]
+          ]
+        ]
+      },
+      "id": "way/625023208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023211",
+        "addr:full": "jln.Tgk.cot Aron lamjabat kec.meuraxa kota banda aceh",
+        "amenity": "school",
+        "name": "SMA Negeri 6",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2950373, 5.5447343],
+            [95.2946082, 5.5447369],
+            [95.2945706, 5.5439227],
+            [95.2952144, 5.54392],
+            [95.2952224, 5.5443632],
+            [95.2950373, 5.5443792],
+            [95.2950373, 5.5447343]
+          ]
+        ]
+      },
+      "id": "way/625023211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625023212",
+        "addr:full": "jl.tgk.hanafiah gampong baro kec.meuraxa",
+        "amenity": "school",
+        "name": "SD Negeri 31 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2994437, 5.5457252],
+            [95.2996073, 5.5452954],
+            [95.2999641, 5.5454302],
+            [95.2998085, 5.54586],
+            [95.2994437, 5.5457252]
+          ]
+        ]
+      },
+      "id": "way/625023212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625031671",
+        "access:roof": "no",
+        "addr:full": "tgk Chik dipineung",
+        "amenity": "school",
+        "name": "SMP 18 Banda Aceh",
+        "operator:type": "government",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3440624, 5.5659942],
+            [95.3442057, 5.5654397],
+            [95.3448402, 5.5656022],
+            [95.344697, 5.5661566],
+            [95.3440624, 5.5659942]
+          ]
+        ]
+      },
+      "id": "way/625031671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625031678",
+        "access:roof": "no",
+        "addr:full": "jl T Daud beureueh",
+        "amenity": "school",
+        "name": "SMA Negeri 3 Banda Aceh",
+        "operator:type": "government",
+        "source": "survey",
+        "wikidata": "Q12510551"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3311211, 5.5606439],
+            [95.3317393, 5.5606372],
+            [95.3317648, 5.5615315],
+            [95.3315887, 5.5615379],
+            [95.3311412, 5.5615542],
+            [95.3311211, 5.5606439]
+          ]
+        ]
+      },
+      "id": "way/625031678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625479593",
+        "addr:full": "jln kutilang",
+        "amenity": "school",
+        "name": "MIN 3",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3310627, 5.5476436],
+            [95.3310098, 5.54746],
+            [95.3309896, 5.5472484],
+            [95.3310721, 5.5472251],
+            [95.3312724, 5.5471837],
+            [95.3313625, 5.5471637],
+            [95.3314651, 5.5475561],
+            [95.3310627, 5.5476436]
+          ]
+        ]
+      },
+      "id": "way/625479593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625479594",
+        "addr:full": "jln paya umet blang cut",
+        "amenity": "school",
+        "name": "SMA negeri 11",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3331676, 5.5447797],
+            [95.3332856, 5.5442831],
+            [95.3333822, 5.5439174],
+            [95.3338248, 5.5439734],
+            [95.3338958, 5.5439694],
+            [95.3339267, 5.5439507],
+            [95.3340138, 5.5439734],
+            [95.3337724, 5.5449372],
+            [95.3335914, 5.5448911],
+            [95.3332628, 5.5448003],
+            [95.3331676, 5.5447797]
+          ]
+        ]
+      },
+      "id": "way/625479594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/625496954",
+        "addr:full": "jalan ule lhee simpang rima",
+        "amenity": "school",
+        "capacity:persons": "100-250",
+        "name": "SD 1 Peukan Bada",
+        "operator:type": "government",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2826019, 5.5354801],
+            [95.2827265, 5.5354116],
+            [95.2827441, 5.5354432],
+            [95.2830944, 5.5352507],
+            [95.2831975, 5.5354366],
+            [95.2830846, 5.5354987],
+            [95.2831828, 5.5356756],
+            [95.2828207, 5.5358746],
+            [95.2826019, 5.5354801]
+          ]
+        ]
+      },
+      "id": "way/625496954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626355411",
+        "addr:full": "Jalan Jeumpa Puteh",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "SD Negeri 2 Banda Aceh",
+        "operator:type": "government",
+        "ref": "10105448",
+        "school:type_idn": "sd",
+        "short_name": "SDN 2 Banda Aceh",
+        "source": "survey",
+        "wikidata": "Q64827570"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3111235, 5.5525226],
+            [95.3111146, 5.5521103],
+            [95.3115979, 5.552116],
+            [95.3116282, 5.5525028],
+            [95.3111235, 5.5525226]
+          ]
+        ]
+      },
+      "id": "way/626355411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626355412",
+        "addr:full": "jalan kechik Ma'in",
+        "amenity": "school",
+        "name": "SD NEGERI 38",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3065889, 5.5555743],
+            [95.3065869, 5.5552707],
+            [95.3071428, 5.5552653],
+            [95.3071542, 5.5554942],
+            [95.3070496, 5.5555903],
+            [95.3066982, 5.555581],
+            [95.3065889, 5.5555743]
+          ]
+        ]
+      },
+      "id": "way/626355412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626355416",
+        "addr:full": "Jalan Prof Majid Ibrahim No 23",
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "SD Negeri 1 Banda Aceh",
+        "operator:type": "government",
+        "ref": "10105465",
+        "school:type_idn": "sd",
+        "short_name": "SDN 1 Banda Aceh",
+        "source": "survey",
+        "wikidata": "Q64827633"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3123779, 5.5527379],
+            [95.3130937, 5.5525026],
+            [95.3131892, 5.5528171],
+            [95.3132441, 5.5530184],
+            [95.313039, 5.5530782],
+            [95.3125374, 5.5532344],
+            [95.3123779, 5.5527379]
+          ]
+        ]
+      },
+      "id": "way/626355416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626355417",
+        "addr:full": "Jalan Prof Majid Ibrahim No 7",
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "SMA Negeri 1 Banda Aceh",
+        "operator:type": "government",
+        "ref": "10105389",
+        "school:type_idn": "sma",
+        "short_name": "SMAN 1 Banda Aceh",
+        "source": "survey",
+        "wikidata": "Q19734587"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3120902, 5.5518078],
+            [95.311923, 5.5513021],
+            [95.3126618, 5.551065],
+            [95.3126889, 5.5511635],
+            [95.3127868, 5.5515196],
+            [95.3128013, 5.5515725],
+            [95.3120902, 5.5518078]
+          ]
+        ]
+      },
+      "id": "way/626355417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626355421",
+        "addr:full": "jalan prof Majid Ibrahim",
+        "amenity": "school",
+        "name": "SD Muhammadiyah I",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3135955, 5.5540086],
+            [95.3138034, 5.5539766],
+            [95.3140113, 5.5546506],
+            [95.3138024, 5.5547077],
+            [95.3135969, 5.55472],
+            [95.3135955, 5.5540086]
+          ]
+        ]
+      },
+      "id": "way/626355421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626371874",
+        "addr:full": "Jl.Maharaja Puang",
+        "amenity": "school",
+        "name": "SD Negeri 7",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3010562, 5.5649032],
+            [95.3011796, 5.5645428],
+            [95.3014076, 5.5646242],
+            [95.3015296, 5.5646616],
+            [95.3013057, 5.565058],
+            [95.3010562, 5.5649032]
+          ]
+        ]
+      },
+      "id": "way/626371874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626371881",
+        "addr:full": "Jl. Gampong Lambung",
+        "amenity": "school",
+        "name": "SMP Negeri 5",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2926077, 5.5563665],
+            [95.2926475, 5.5560184],
+            [95.2932177, 5.5560829],
+            [95.2931779, 5.556431],
+            [95.2926077, 5.5563665]
+          ]
+        ]
+      },
+      "id": "way/626371881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626371882",
+        "addr:full": "Jl. Gampong Lambung",
+        "amenity": "school",
+        "name": "SD Negeri 21",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2922256, 5.5565645],
+            [95.2922553, 5.5562202],
+            [95.2926047, 5.55625],
+            [95.292575, 5.5565943],
+            [95.2922256, 5.5565645]
+          ]
+        ]
+      },
+      "id": "way/626371882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/626371883",
+        "addr:full": "Jl.Rama Setia",
+        "amenity": "school",
+        "name": "SD Negeri 48",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.2890243, 5.5590988],
+            [95.2891432, 5.5587899],
+            [95.2894469, 5.558904],
+            [95.2893336, 5.5592223],
+            [95.2893554, 5.5592959],
+            [95.2892311, 5.5594391],
+            [95.2890243, 5.5590988]
+          ]
+        ]
+      },
+      "id": "way/626371883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627113839",
+        "addr:full": "jln poteumerehom lamteh ulekareng",
+        "amenity": "school",
+        "name": "SMP 10 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3434043, 5.5487],
+            [95.3434123, 5.5480406],
+            [95.3435156, 5.548038],
+            [95.3442773, 5.5480433],
+            [95.344272, 5.5485812],
+            [95.3442237, 5.5486974],
+            [95.3434043, 5.5487]
+          ]
+        ]
+      },
+      "id": "way/627113839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627113840",
+        "addr:full": "jln teungku musa lamteh",
+        "amenity": "school",
+        "name": "SD NEGERI 42",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3472264, 5.546858],
+            [95.3471674, 5.5468553],
+            [95.3471781, 5.546535],
+            [95.3475362, 5.546547],
+            [95.3475215, 5.5468713],
+            [95.3472264, 5.546858]
+          ]
+        ]
+      },
+      "id": "way/627113840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628460972",
+        "addr:full": "jln mesjid tuha no 22",
+        "amenity": "school",
+        "name": "MIN 5 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3570532, 5.553384],
+            [95.3568881, 5.5527243],
+            [95.3574246, 5.5526429],
+            [95.3574718, 5.5529006],
+            [95.3572049, 5.5529549],
+            [95.35729, 5.5533269],
+            [95.3570532, 5.553384]
+          ]
+        ]
+      },
+      "id": "way/628460972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628460979",
+        "access:roof": "yes",
+        "addr:full": "jln kebon raja no 7 doy uleekareng banda aceh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "yayasan bina upaya kesejahteraan para cacat",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3536892, 5.5545363],
+            [95.3536851, 5.5546059],
+            [95.353606, 5.5546012],
+            [95.3536141, 5.5544651],
+            [95.3538068, 5.5544747],
+            [95.3538038, 5.5545414],
+            [95.3536892, 5.5545363]
+          ]
+        ]
+      },
+      "id": "way/628460979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628460982",
+        "access:roof": "yes",
+        "addr:full": "jln prof Ali hasyimi gp ilie ulee kareng",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "SMAN unggul 16 banda aceh",
+        "operator:type": "government",
+        "school:type_idn": "sma",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3459284, 5.5453812],
+            [95.34593, 5.5454878],
+            [95.345734, 5.5454908],
+            [95.3457322, 5.5453746],
+            [95.3457913, 5.5453738],
+            [95.3457922, 5.5454354],
+            [95.3458791, 5.5454341],
+            [95.3458783, 5.5453819],
+            [95.3459284, 5.5453812]
+          ]
+        ]
+      },
+      "id": "way/628460982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628460988",
+        "addr:full": "jln perdamaian pango deah ulee kareng",
+        "amenity": "school",
+        "name": "SDIT Nurul Ishlah",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3523441, 5.5407391],
+            [95.3523521, 5.5403667],
+            [95.3528228, 5.5403667],
+            [95.3528027, 5.5407511],
+            [95.3523441, 5.5407391]
+          ]
+        ]
+      },
+      "id": "way/628460988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628461003",
+        "addr:full": "jln tgk makam",
+        "amenity": "school",
+        "name": "SD Negeri 11 desa doy ulee kareng",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3501326, 5.5566315],
+            [95.3501306, 5.556197],
+            [95.3504021, 5.556195],
+            [95.3504129, 5.5562818],
+            [95.3504169, 5.5566368],
+            [95.3501326, 5.5566315]
+          ]
+        ]
+      },
+      "id": "way/628461003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628461009",
+        "access:roof": "yes",
+        "addr:full": "jln tgk makam",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "1",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SDIC Anaba Banda Aceh",
+        "operator:type": "private",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3551624, 5.5550124],
+            [95.3551586, 5.5548582],
+            [95.3554669, 5.5548508],
+            [95.3554706, 5.555005],
+            [95.35545, 5.5550055],
+            [95.355399, 5.5550067],
+            [95.3551624, 5.5550124]
+          ]
+        ]
+      },
+      "id": "way/628461009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628461470",
+        "access:roof": "yes",
+        "addr:full": "jln tgk iskandar",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "250-500",
+        "name": "SD Negeri 56 Banda Aceh",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3517978, 5.5522098],
+            [95.3517904, 5.5520903],
+            [95.3519491, 5.5520807],
+            [95.351939, 5.5519151],
+            [95.3520432, 5.5519088],
+            [95.3520632, 5.5522338],
+            [95.3519505, 5.5522406],
+            [95.351948, 5.5522006],
+            [95.3517978, 5.5522098]
+          ]
+        ]
+      },
+      "id": "way/628461470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628516840",
+        "addr:full": "jalan jurong dagang",
+        "amenity": "school",
+        "name": "SD N 66 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3536998, 5.5440511],
+            [95.3536974, 5.5436386],
+            [95.3540398, 5.5436366],
+            [95.3540422, 5.5440492],
+            [95.3536998, 5.5440511]
+          ]
+        ]
+      },
+      "id": "way/628516840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628516912",
+        "access:roof": "no",
+        "addr:full": "jalan jeurat timoh",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "poor",
+        "building:levels": "2",
+        "building:material": "wood",
+        "building:roof": "tin",
+        "building:structure": "wood_frame",
+        "capacity:persons": "100-250",
+        "name": "DAYAH DARUL AMIN AL WALIYYAH",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3496928, 5.5422882],
+            [95.3496936, 5.5421914],
+            [95.3498334, 5.5421924],
+            [95.3498327, 5.5422892],
+            [95.3496928, 5.5422882]
+          ]
+        ]
+      },
+      "id": "way/628516912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628516918",
+        "addr:full": "jalan mawar",
+        "amenity": "school",
+        "name": "DAYAH RAUDHATUL HIKMAH AL WLIYAH",
+        "operator:type": "private",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3453361, 5.542797],
+            [95.3452565, 5.5426973],
+            [95.3451737, 5.5421372],
+            [95.3453796, 5.5421239],
+            [95.3454754, 5.5424825],
+            [95.3456942, 5.5424493],
+            [95.3457478, 5.5427071],
+            [95.3453361, 5.542797]
+          ]
+        ]
+      },
+      "id": "way/628516918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/628516941",
+        "addr:full": "jalan utama pango",
+        "amenity": "school",
+        "name": "SD N 14 BANDA ACEH",
+        "operator:type": "government",
+        "school:type_idn": "sd",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3495816, 5.5379542],
+            [95.3490921, 5.5379551],
+            [95.3490916, 5.5376667],
+            [95.3495811, 5.5376659],
+            [95.3495816, 5.5379542]
+          ]
+        ]
+      },
+      "id": "way/628516941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/629371703",
+        "amenity": "school",
+        "building": "school",
+        "name": "MIN 1 Banda Aceh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3244035, 5.5478572],
+            [95.3243923, 5.5477423],
+            [95.3246646, 5.5477161],
+            [95.3246758, 5.547831],
+            [95.3244035, 5.5478572]
+          ]
+        ]
+      },
+      "id": "way/629371703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/864077069",
+        "amenity": "school",
+        "name": "MIN 9 Banda Aceh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.3398535, 5.5551892],
+            [95.3398718, 5.5549303],
+            [95.3397498, 5.5549181],
+            [95.3397559, 5.5548089],
+            [95.3402072, 5.5548453],
+            [95.3401665, 5.5552459],
+            [95.3398535, 5.5551892]
+          ]
+        ]
+      },
+      "id": "way/864077069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/992993525",
+        "access:roof": "yes",
+        "addr:full": "jalan prof Majid Ibrahim",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "3",
+        "building:material": "concrete",
+        "building:roof": "tin",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "100-250",
+        "name": "PAUD-TK-MI Bait Qurany Saleh Rahmany",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [95.312577, 5.5535169],
+            [95.3128333, 5.5534633],
+            [95.3128903, 5.5537332],
+            [95.3126436, 5.5537848],
+            [95.3126273, 5.553708],
+            [95.3127143, 5.5536898],
+            [95.3126894, 5.5535717],
+            [95.3125929, 5.5535919],
+            [95.312577, 5.5535169]
+          ]
+        ]
+      },
+      "id": "way/992993525"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3273412110",
+        "amenity": "school",
+        "name": "PAUD Bhakti Pertiwi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.3399041, 5.5711944]
+      },
+      "id": "node/3273412110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4395480302",
+        "addr:street": "Jalan Pocut Baren",
+        "amenity": "school",
+        "name:en": "Methodist School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.3220097, 5.5617208]
+      },
+      "id": "node/4395480302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5895632598",
+        "access:roof": "yes",
+        "amenity": "school",
+        "building": "school",
+        "building:condition": "good",
+        "building:levels": "2",
+        "building:material": "brick",
+        "building:roof": "tile",
+        "building:structure": "confined_masonry",
+        "capacity:persons": "<50",
+        "operator:type": "government",
+        "school:type_idn": "smp",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.3089954, 5.533344]
+      },
+      "id": "node/5895632598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10297675987",
+        "amenity": "school",
+        "check_date": "2023-01-01",
+        "grades": "7-9",
+        "name:id": "SMP Negeri 3",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.3183833, 5.544668]
+      },
+      "id": "node/10297675987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10297675988",
+        "amenity": "school",
+        "check_date": "2023-01-01",
+        "grades": "1-6",
+        "name:id": "SD Negeri 22",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.3176946, 5.5447776]
+      },
+      "id": "node/10297675988"
+    }
+  ]
+}
