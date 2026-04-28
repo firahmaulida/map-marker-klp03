@@ -7009,21 +7009,3 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10297675988",
-        "amenity": "school",
-        "check_date": "2023-01-01",
-        "grades": "1-6",
-        "name:id": "SD Negeri 22",
-        "operator:type": "government"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          95.3176946,
-          5.5447776
-        ]
-      },
-      "id": "node/10297675988"
-    }
-  ]
-}
