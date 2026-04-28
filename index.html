@@ -4,21 +4,27 @@
     <title>Web GIS Sekolah di Banda Aceh</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Leaflet untuk tampilan peta dasar -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
     />
+    <!-- CSS plugin MarkerCluster untuk pengelompokan marker -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
     />
+    <!-- CSS default tema MarkerCluster -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
     />
+    <!-- CSS kustom aplikasi ini -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header aplikasi: judul dan tombol "Tentang" -->
     <div class="header">
       <h1 class="title">Web GIS Sekolah di Banda Aceh</h1>
       <div>
@@ -26,12 +32,15 @@
       </div>
     </div>
 
+    <!-- Area kontrol: pencarian dan filter jenis sekolah -->
     <div class="controls">
       <div class="search-container">
+        <!-- Input pencarian sekolah, aktif saat tekan Enter -->
         <input type="text" id="search" placeholder="Cari sekolah..." />
       </div>
       <div class="filter-container">
         <label for="layerFilter">Filter:</label>
+        <!-- Dropdown filter, opsi jenis sekolah diisi secara dinamis lewat JS -->
         <select id="layerFilter">
           <option value="all">Semua Sekolah</option>
           <!-- Filter options will be populated dynamically -->
@@ -39,31 +48,41 @@
       </div>
     </div>
 
+    <!-- Kontainer utama peta Leaflet -->
     <div id="map"></div>
 
+    <!-- Panel samping: menampilkan detail sekolah saat marker diklik -->
     <div id="infoPanel" class="info-panel">
       <h3>Informasi Sekolah</h3>
       <div id="infoContent"></div>
     </div>
 
+    <!-- Footer halaman -->
     <div class="footer">
       &copy; 2025 Web GIS Sekolah Banda Aceh | Data dari OpenStreetMap
     </div>
 
+    <!-- Library Leaflet untuk rendering peta -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- Plugin MarkerCluster untuk mengelompokkan marker yang berdekatan -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
 
     <script>
       // Inisialisasi map dengan koordinat Banda Aceh
+      // setView([lat, lng], zoomLevel) — zoom 13 cocok untuk tampilan kota
       var map = L.map("map").setView([5.5548, 95.3171], 13);
 
-      // Tambahkan basemap layers
+      // --- Definisi basemap (peta dasar) ---
+
+      // Layer OpenStreetMap standar
       var osm = L.tileLayer(
         "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
         {
           attribution: "© OpenStreetMap contributors",
         }
       );
+
+      // Layer citra satelit dari Esri
       var satellite = L.tileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         {
@@ -71,65 +90,84 @@
           maxZoom: 19,
         }
       );
+
+      // Objek baseMaps digunakan oleh L.control.layers untuk pemilihan basemap
       var baseMaps = {
         OpenStreetMap: osm,
         "Citra Satelit": satellite,
       };
 
-      // Set default basemap
+      // Set OSM sebagai basemap awal yang ditampilkan
       osm.addTo(map);
 
-      // Inisialisasi layer groups
+      // --- Inisialisasi layer data sekolah ---
+
+      // geojsonLayer: layer GeoJSON mentah hasil loading data
       var geojsonLayer;
+
+      // markerClusterGroup: layer yang mengelompokkan marker agar tidak tumpang tindih
       var markerClusterGroup = L.markerClusterGroup();
 
+      // overlayMaps digunakan oleh kontrol layer untuk toggle overlay
       var overlayMaps = {
         "Data Sekolah": markerClusterGroup,
       };
 
-      // Add layer control
+      // Tambahkan kontrol layer (switcher basemap + overlay) ke peta
       L.control.layers(baseMaps, overlayMaps).addTo(map);
 
-      // Add scale control
+      // Tambahkan skala jarak (metrik saja, tanpa imperial)
       L.control.scale({ imperial: false }).addTo(map);
 
-      // School icon colors based on school type
+      // --- Fungsi utilitas ---
+
+      /**
+       * Menentukan warna marker berdasarkan jenis sekolah.
+       * Pengecekan dilakukan dengan includes() agar fleksibel terhadap variasi penulisan.
+       * @param {string} schoolType - Jenis sekolah (misal: "SD", "SMP", dll.)
+       * @returns {string} Kode warna heksadesimal
+       */
       function getSchoolColor(schoolType) {
         schoolType = (schoolType || "").toLowerCase();
         if (schoolType.includes("sd") || schoolType.includes("sekolah dasar")) {
-          return "#4CAF50"; // Green for elementary
+          return "#4CAF50"; // Hijau untuk SD
         } else if (
           schoolType.includes("smp") ||
           schoolType.includes("sekolah menengah pertama")
         ) {
-          return "#2196F3"; // Blue for junior high
+          return "#2196F3"; // Biru untuk SMP
         } else if (
           schoolType.includes("sma") ||
           schoolType.includes("sekolah menengah atas")
         ) {
-          return "#FFC107"; // Yellow for senior high
+          return "#FFC107"; // Kuning untuk SMA
         } else if (
           schoolType.includes("smk") ||
           schoolType.includes("sekolah menengah kejuruan")
         ) {
-          return "#FF5722"; // Orange for vocational
+          return "#FF5722"; // Oranye untuk SMK
         } else if (
           schoolType.includes("tk") ||
           schoolType.includes("taman kanak")
         ) {
-          return "#9C27B0"; // Purple for kindergarten
+          return "#9C27B0"; // Ungu untuk TK
         } else if (
           schoolType.includes("universitas") ||
           schoolType.includes("univ") ||
           schoolType.includes("perguruan tinggi")
         ) {
-          return "#F44336"; // Red for university
+          return "#F44336"; // Merah untuk universitas
         } else {
-          return "#607D8B"; // Gray for others
+          return "#607D8B"; // Abu-abu untuk jenis lainnya
         }
       }
 
-      // Function to create custom school icon
+      /**
+       * Membuat ikon marker kustom berbentuk lingkaran berwarna.
+       * Menggunakan L.divIcon agar bisa diberi warna dinamis via HTML/CSS inline.
+       * @param {string} schoolType - Jenis sekolah untuk menentukan warna
+       * @returns {L.DivIcon} Ikon Leaflet kustom
+       */
       function createSchoolIcon(schoolType) {
         const color = getSchoolColor(schoolType);
         return L.divIcon({
@@ -139,12 +177,18 @@
             color +
             '; width: 24px; height: 24px; border-radius: 12px; border: 2px solid white;">S</div>',
           iconSize: [28, 28],
-          iconAnchor: [14, 14],
+          iconAnchor: [14, 14], // Titik anchor di tengah ikon
         });
       }
 
-      // Function to clean property names for better display
+      /**
+       * Mengubah nama properti OSM mentah menjadi label yang lebih ramah pengguna.
+       * Misalnya: "addr:street" → "Alamat", "amenity" → "Jenis".
+       * @param {string} name - Nama properti asli dari GeoJSON
+       * @returns {string} Label yang sudah diformat
+       */
       function cleanPropertyName(name) {
+        // Ganti underscore dan titik dua dengan spasi, lalu kapitalisasi huruf pertama
         name = name
           .replace(/_/g, " ")
           .replace(/:/g, " ")
@@ -152,7 +196,7 @@
             return m.toUpperCase();
           });
 
-        // Special cases for OSM tags
+        // Override khusus untuk tag OSM yang umum
         if (name === "Name") return "Nama";
         if (name === "Amenity") return "Jenis";
         if (name === "Operator") return "Pengelola";
@@ -164,17 +208,22 @@
         return name;
       }
 
-      // Function to create custom popup content
+      /**
+       * Membuat konten HTML untuk popup dan panel info sekolah.
+       * Properti prioritas ditampilkan lebih dulu, sisanya menyusul.
+       * @param {Object} properties - Properti fitur GeoJSON
+       * @returns {string} String HTML konten popup
+       */
       function createPopupContent(properties) {
         let content = '<div class="popup-content">';
 
-        // Try to get the school name
+        // Ambil nama sekolah; fallback ke "Sekolah" jika tidak ada
         const name = properties.name || properties.nama || "Sekolah";
         content += "<h3>" + name + "</h3>";
 
         content += "<table>";
 
-        // Process important properties first
+        // Daftar properti yang ditampilkan terlebih dahulu (urutan prioritas)
         const priorityProps = [
           "amenity",
           "isced",
@@ -186,13 +235,14 @@
           "website",
         ];
 
-        // First show priority properties if they exist
+        // Tampilkan properti prioritas jika ada nilainya
         priorityProps.forEach((prop) => {
           if (properties[prop]) {
             let value = properties[prop];
 
-            // Format links for website
+            // Jika properti adalah website, buat sebagai tautan HTML
             if (prop === "website" && !value.startsWith("http")) {
+              // Tambahkan http:// jika belum ada protokol
               value =
                 '<a href="http://' +
                 value +
@@ -210,17 +260,17 @@
           }
         });
 
-        // Then show other properties
+        // Tampilkan properti lainnya (di luar prioritas dan properti internal)
         for (let key in properties) {
           if (
             properties.hasOwnProperty(key) &&
             !priorityProps.includes(key) &&
-            key !== "name" &&
-            key !== "@id" &&
+            key !== "name" &&         // Sudah ditampilkan di judul
+            key !== "@id" &&          // ID internal OSM, tidak perlu ditampilkan
             key !== "id" &&
-            !key.startsWith("_") &&
-            key !== "schoolType" &&
-            key !== "coordinatesType"
+            !key.startsWith("_") &&   // Properti internal (underscore prefix)
+            key !== "schoolType" &&   // Properti tambahan hasil pemrosesan JS
+            key !== "coordinatesType" // Penanda tipe koordinat asal (polygon/point)
           ) {
             content += `<tr><td><strong>${cleanPropertyName(
               key
@@ -234,7 +284,13 @@
         return content;
       }
 
-      // Process Overpass Turbo GeoJSON format
+      /**
+       * Mengonversi format data mentah dari Overpass API ke format GeoJSON standar.
+       * Overpass mengembalikan array "elements" dengan node/way, bukan FeatureCollection.
+       * Hanya memproses elemen dengan amenity: school, university, kindergarten, college.
+       * @param {Object} data - Data JSON mentah dari Overpass API
+       * @returns {Object} GeoJSON FeatureCollection
+       */
       function processOverpassData(data) {
         let featureCollection = {
           type: "FeatureCollection",
@@ -243,6 +299,7 @@
 
         if (data.elements) {
           data.elements.forEach((element) => {
+            // Hanya proses node dan way yang merupakan fasilitas pendidikan
             if (
               (element.type === "node" || element.type === "way") &&
               element.tags &&
@@ -261,9 +318,11 @@
                 },
               };
 
+              // Tambahkan ID OSM sebagai properti
               feature.properties["@id"] = element.type + "/" + element.id;
 
               if (element.type === "node" && element.lat && element.lon) {
+                // Node langsung memiliki koordinat lat/lon
                 feature.geometry.coordinates = [element.lon, element.lat];
                 featureCollection.features.push(feature);
               } else if (
@@ -272,6 +331,7 @@
                 element.center.lat &&
                 element.center.lon
               ) {
+                // Way (poligon) menggunakan titik tengah (center) yang dihitung Overpass
                 feature.geometry.coordinates = [
                   element.center.lon,
                   element.center.lat,
@@ -285,7 +345,12 @@
         return featureCollection;
       }
 
-      // Fungsi untuk mengekstrak titik centroid dari poligon
+      /**
+       * Menghitung titik centroid (titik tengah rata-rata) dari koordinat poligon.
+       * Digunakan untuk mengonversi fitur Polygon/MultiPolygon menjadi titik tunggal.
+       * @param {Array} coordinates - Array koordinat dari geometri GeoJSON
+       * @returns {Array|null} Koordinat [lon, lat] centroid, atau null jika gagal
+       */
       function getCentroid(coordinates) {
         if (!coordinates || coordinates.length === 0) {
           return null;
@@ -293,24 +358,29 @@
 
         let points;
 
+        // Deteksi format koordinat: MultiPolygon, Polygon, atau Point
         if (Array.isArray(coordinates[0]) && Array.isArray(coordinates[0][0])) {
+          // Format Polygon: [[[lon, lat], ...]] — ambil ring pertama (outer ring)
           points = coordinates[0];
         } else if (
           Array.isArray(coordinates[0]) &&
           coordinates[0].length === 2 &&
           typeof coordinates[0][0] === "number"
         ) {
+          // Format array of points: [[lon, lat], ...]
           points = coordinates;
         } else if (
           coordinates.length === 2 &&
           typeof coordinates[0] === "number"
         ) {
+          // Sudah berupa titik tunggal [lon, lat]
           return coordinates;
         } else {
           console.error("Format koordinat tidak dikenali:", coordinates);
           return null;
         }
 
+        // Hitung rata-rata koordinat X (lon) dan Y (lat) dari semua titik
         let sumX = 0;
         let sumY = 0;
 
@@ -322,14 +392,22 @@
         return [sumX / points.length, sumY / points.length];
       }
 
-      // Function to determine school type from OSM tags
+      /**
+       * Menentukan jenis sekolah dari properti OSM.
+       * Menggunakan tag "isced" (International Standard Classification of Education)
+       * jika tersedia, kemudian mencoba menebak dari nama sekolah.
+       * @param {Object} properties - Properti fitur GeoJSON
+       * @returns {string} Label jenis sekolah (misal: "SD", "SMP", "Universitas", dll.)
+       */
       function getSchoolType(properties) {
         if (!properties) return "Lainnya";
 
+        // Cek tag amenity untuk perguruan tinggi dan TK
         if (properties.amenity === "university") return "Universitas";
         if (properties.amenity === "college") return "Perguruan Tinggi";
         if (properties.amenity === "kindergarten") return "TK";
 
+        // Gunakan tag ISCED jika tersedia (standar internasional jenjang pendidikan)
         if (properties.isced) {
           const isced = properties.isced;
           if (isced === "0") return "TK";
@@ -338,6 +416,7 @@
           if (isced === "3") return "SMA/SMK";
         }
 
+        // Fallback: tebak dari kata kunci dalam nama sekolah
         const name = (properties.name || "").toLowerCase();
         if (name.includes("universitas") || name.includes("univ"))
           return "Universitas";
@@ -357,10 +436,15 @@
         )
           return "TK";
 
+        // Jika tidak ada yang cocok, kembalikan label generik
         return "Sekolah";
       }
 
-      // Load GeoJSON or Overpass data
+      /**
+       * Memuat data sekolah dari file GeoJSON lokal.
+       * Mendukung dua format: GeoJSON standar dan format mentah Overpass API.
+       * Jika berhasil, data diteruskan ke processGeoJsonData().
+       */
       function loadSchoolData() {
         fetch("data/data.geojson")
           .then((response) => {
@@ -371,6 +455,8 @@
           })
           .then((data) => {
             let geoJsonData;
+            // Deteksi apakah ini format Overpass (ada properti "elements")
+            // atau GeoJSON standar (ada properti "features")
             if (data.elements) {
               geoJsonData = processOverpassData(data);
             } else {
@@ -386,11 +472,22 @@
           });
       }
 
-      // Process GeoJSON data
+      /**
+       * Memproses GeoJSON yang sudah dimuat:
+       * 1. Mengonversi Polygon/MultiPolygon ke titik centroid
+       * 2. Menambahkan properti schoolType ke setiap fitur
+       * 3. Merender layer ke peta dengan marker kustom dan popup
+       * 4. Mengisi opsi dropdown filter
+       * @param {Object} data - GeoJSON FeatureCollection
+       */
       function processGeoJsonData(data) {
         let processedFeatures = [];
+
         data.features.forEach((feature) => {
+          // Buat salinan dalam (deep copy) agar tidak memodifikasi data asli
           let newFeature = JSON.parse(JSON.stringify(feature));
+
+          // Konversi Polygon atau MultiPolygon menjadi titik centroid
           if (
             feature.geometry.type === "Polygon" ||
             feature.geometry.type === "MultiPolygon"
@@ -400,22 +497,29 @@
             if (feature.geometry.type === "Polygon") {
               centroid = getCentroid(feature.geometry.coordinates);
             } else if (feature.geometry.type === "MultiPolygon") {
+              // Untuk MultiPolygon, ambil poligon pertama saja
               centroid = getCentroid(feature.geometry.coordinates[0]);
             }
+
             if (centroid) {
+              // Ganti geometri dengan titik hasil konversi
               newFeature.geometry = {
                 type: "Point",
                 coordinates: centroid,
               };
+              // Tandai bahwa koordinat ini hasil konversi
               newFeature.properties.coordinatesType =
                 "converted_from_" + feature.geometry.type;
             } else {
               console.warn("Tidak dapat menghitung centroid untuk:", feature);
-              return;
+              return; // Lewati fitur ini jika centroid tidak bisa dihitung
             }
           }
+
+          // Tentukan dan simpan jenis sekolah sebagai properti tambahan
           const schoolType = getSchoolType(newFeature.properties);
           newFeature.properties.schoolType = schoolType;
+
           processedFeatures.push(newFeature);
         });
 
@@ -424,10 +528,15 @@
           features: processedFeatures,
         };
 
+        // Buat layer GeoJSON Leaflet dari data yang sudah diproses
         geojsonLayer = L.geoJSON(processedData, {
+          // onEachFeature: dipanggil untuk setiap fitur — bind popup dan event klik
           onEachFeature: function (feature, layer) {
             if (feature.properties) {
+              // Popup muncul saat marker diklik di peta
               layer.bindPopup(createPopupContent(feature.properties));
+
+              // Tampilkan info di panel samping saat marker diklik
               layer.on("click", function () {
                 document.getElementById("infoPanel").style.display = "block";
                 let infoContent = createPopupContent(feature.properties);
@@ -435,6 +544,7 @@
               });
             }
           },
+          // pointToLayer: mengonversi GeoJSON Point ke marker Leaflet kustom
           pointToLayer: function (feature, latlng) {
             const schoolType =
               feature.properties.schoolType ||
@@ -445,26 +555,35 @@
           },
         });
 
+        // Masukkan layer GeoJSON ke dalam cluster group lalu tampilkan di peta
         markerClusterGroup.addLayer(geojsonLayer);
         markerClusterGroup.addTo(map);
 
+        // Sesuaikan zoom peta agar semua marker terlihat
         if (geojsonLayer.getBounds().isValid()) {
           map.fitBounds(geojsonLayer.getBounds());
         }
 
+        // Isi opsi filter dropdown berdasarkan jenis sekolah yang ada di data
         populateFilterOptions(processedData);
       }
 
-      // Function to populate filter options based on school types
+      /**
+       * Mengumpulkan semua jenis sekolah unik dari data dan mengisinya
+       * sebagai opsi pada dropdown filter (#layerFilter).
+       * @param {Object} data - GeoJSON FeatureCollection yang sudah diproses
+       */
       function populateFilterOptions(data) {
         const filterSelect = document.getElementById("layerFilter");
-        const schoolTypes = new Set();
+        const schoolTypes = new Set(); // Set digunakan untuk menghindari duplikat
 
+        // Hapus semua opsi kecuali "Semua Sekolah" (index 0)
         while (filterSelect.options.length > 1) {
           filterSelect.options.remove(1);
         }
 
         if (data.features && data.features.length > 0) {
+          // Kumpulkan semua jenis sekolah unik
           data.features.forEach((feature) => {
             if (feature.properties) {
               const schoolType =
@@ -476,6 +595,7 @@
             }
           });
 
+          // Tambahkan opsi ke dropdown secara alfabetis
           Array.from(schoolTypes)
             .sort()
             .forEach((type) => {
@@ -487,19 +607,22 @@
         }
       }
 
-      // Filter function
+      // --- Event listener: Filter berdasarkan jenis sekolah ---
       document
         .getElementById("layerFilter")
         .addEventListener("change", function (e) {
           const filterValue = e.target.value;
 
           if (filterValue === "all") {
+            // Tampilkan semua marker jika "Semua Sekolah" dipilih
             markerClusterGroup.clearLayers();
             markerClusterGroup.addLayer(geojsonLayer);
           } else {
+            // Hapus layer lama, buat layer baru dengan filter jenis sekolah
             markerClusterGroup.clearLayers();
 
             const filteredLayer = L.geoJSON(geojsonLayer.toGeoJSON(), {
+              // Fungsi filter: hanya tampilkan fitur dengan schoolType yang sesuai
               filter: function (feature) {
                 if (!feature.properties) return false;
                 const schoolType =
@@ -533,11 +656,12 @@
           }
         });
 
-      // Search functionality
+      // --- Event listener: Pencarian sekolah (aktif saat tekan Enter) ---
       document.getElementById("search").addEventListener("keyup", function (e) {
         if (e.key === "Enter") {
           const searchText = e.target.value.toLowerCase();
 
+          // Validasi minimal 2 karakter agar pencarian tidak terlalu luas
           if (searchText.length < 2) {
             alert("Masukkan minimal 2 karakter untuk pencarian");
             return;
@@ -545,18 +669,20 @@
 
           markerClusterGroup.clearLayers();
 
+          // Buat layer baru yang hanya berisi fitur yang cocok dengan kata kunci
           const searchLayer = L.geoJSON(geojsonLayer.toGeoJSON(), {
             filter: function (feature) {
               if (!feature.properties) return false;
+              // Cek semua properti (kecuali properti internal) apakah mengandung kata kunci
               for (const prop in feature.properties) {
                 if (prop !== "coordinatesType" && prop !== "schoolType") {
                   const value = String(feature.properties[prop]).toLowerCase();
                   if (value.includes(searchText)) {
-                    return true;
+                    return true; // Fitur ini cocok, tampilkan
                   }
                 }
               }
-              return false;
+              return false; // Tidak ada properti yang cocok
             },
             onEachFeature: function (feature, layer) {
               if (feature.properties) {
@@ -581,6 +707,7 @@
           markerClusterGroup.addLayer(searchLayer);
 
           if (searchLayer.getLayers().length === 0) {
+            // Jika tidak ada hasil, kembalikan semua marker
             alert("Tidak ada hasil yang ditemukan");
             markerClusterGroup.addLayer(geojsonLayer);
           } else {
@@ -589,13 +716,15 @@
         }
       });
 
-      // Add legend
+      // --- Legenda peta ---
+      // L.control dengan posisi bottomleft agar tidak menutupi kontrol lain
       var legend = L.control({ position: "bottomleft" });
 
       legend.onAdd = function (map) {
         var div = L.DomUtil.create("div", "legend");
         div.innerHTML += "<h4>Legenda</h4>";
 
+        // Peta warna untuk setiap jenis sekolah (sesuai dengan getSchoolColor)
         const schoolTypes = {
           TK: "#9C27B0",
           SD: "#4CAF50",
@@ -606,6 +735,7 @@
           Sekolah: "#607D8B",
         };
 
+        // Buat item legenda untuk setiap jenis sekolah
         for (const type in schoolTypes) {
           div.innerHTML +=
             '<div class="legend-item">' +
@@ -621,14 +751,15 @@
 
       legend.addTo(map);
 
-      // Close info panel when clicking elsewhere on the map
+      // --- Tutup panel info saat klik area kosong di peta ---
+      // e.originalEvent.defaultPrevented memastikan klik pada marker tidak menutup panel
       map.on("click", function (e) {
         if (!e.originalEvent.defaultPrevented) {
           document.getElementById("infoPanel").style.display = "none";
         }
       });
 
-      // About button functionality
+      // --- Tombol "Tentang": tampilkan info aplikasi ---
       document
         .getElementById("aboutBtn")
         .addEventListener("click", function () {
@@ -637,7 +768,7 @@
           );
         });
 
-      // Load data when page is ready
+      // Muat data sekolah saat halaman siap
       loadSchoolData();
     </script>
   </body>
